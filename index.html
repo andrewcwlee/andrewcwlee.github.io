@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Andrew Lee</title>
+
+    <meta name="author" content="Jon Barron">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Andrew Lee
+                </p>
+                <p>I'm a PhD Student in Department of Computer Science at the <a href="https://ucdavis.edu/">University of California, Davis</a>, where I'm advised by <a href="">Iman Soltani</a>. 
+                </p>
+                <p> 
+                  I'm interested in making robots learn to manipulate objects like humans do, mimicking the way humans coordinate both their arms and eyes to perform tasks.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:awclee@ucdavis.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="data/TODO">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=cfIJXfoAAAAJ">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/andrewleecw">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/andrewcwlee/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.JPG" class="hoverZoomLink">
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h2>News</h2>
+              <br><br>
+              <!-- <li>[2024.09.15] &nbsp; We open-sourced <a href="https://soltanilara.github.io/av-aloha">AV-ALOHA</a>!</li> -->
+              <li>[2024.09.04] &nbsp; Our work <em>InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation</em> got accepted at CoRL 2024! See you in Munich, Germany!</li>
+              <li>[2024.06.22] &nbsp; I got married! 🤵🏻👰🏻‍♀️</li>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Publications</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+        <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/TODO.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/avaloha.png' width="160">
+            </div>
+            <script type="text/javascript">
+              function eclipse_start() {
+                document.getElementById('eclipse_image').style.opacity = "1";
+              }
+      
+              function eclipse_stop() {
+                document.getElementById('eclipse_image').style.opacity = "0";
+              }
+              eclipse_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://dorverbin.github.io/eclipse">
+              <span class="papertitle">Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation</span>
+            </a>
+            <br>
+            <a href="https://ian-chuang.github.io/">Ian Chuang*</a>,
+            <strong>Andrew Lee*</strong>,
+            Dechen Gao</a>,
+            <a href="https://faculty.engineering.ucdavis.edu/soltani/biography/">Iman Soltani</a>, <br>
+            *Equal Contribution<br>
+            <em>In review</em>
+            <br>
+            <a href="https://soltanilara.github.io/av-aloha">project page</a>
+            /
+            <a href="https://www.youtube.com/watch?v=0qQJ4Dpt_KU">video</a>
+            /
+            <a href="https://arxiv.org/abs/TODO">arXiv</a>
+            <p></p>
+            <p>
+              We introduce AV-ALOHA, a bimanual robot system with 7-DoF Active Vision which is solely tasked with finding the optimal perspective for a given task.
+            </p>
+          </td>
+        </tr>
+
+
+
+    <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
+          <source src="images/flash_cache.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/interact.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function flash_cache_start() {
+            document.getElementById('flash_cache_image').style.opacity = "1";
+          }
+
+          function flash_cache_stop() {
+            document.getElementById('flash_cache_image').style.opacity = "0";
+          }
+          flash_cache_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="TODO">
+          <span class="papertitle">InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation</span>
+        </a>
+        <br>
+				<strong>Andrew Lee</strong>,
+        <a href="https://ian-chuang.github.io/">Ian Chuang</a>,
+        Ling-Yuan Chen,
+        <a href="https://faculty.engineering.ucdavis.edu/soltani/biography/">Iman Soltani</a>, <br>
+        <em>Conference on Robot Learning (CoRL)</em>, 2024
+        <br>
+        <a href="TODO">project page</a>
+        /
+        <a href="https://openreview.net/forum?id=lKGRPJFPCM">OpenReview</a>
+        /
+        <a href="https://www.arxiv.org/abs/2409.07914">arXiv</a>
+        <p></p>
+        <p>
+          InterACT is a novel imitation learning framework for bimanual manipulation that integrates hierarchical attention to capture inter-dependencies between dual-arm joint states and visual inputs. 
+        </p>
+      </td>
+    </tr>
+</tbody></table>
+
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+  <tr>
+    <td>
+      <h2>Experiences</h2>
+    </td>
+  </tr>
+</tbody></table>
+<table width="100%" align="center" border="0" cellpadding="20"><tbody>
+  
+  <tr>
+    <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/laralogo.png"></td>
+    <td width="75%" valign="center">
+      Graduate Student Researcher at <a href="https://soltanilab.engineering.ucdavis.edu">Laboratory for AI, Robotics and Automation (LARA)</a>
+      <p><em>2023.05 ~ Present, Davis, CA</em></p>
+    </td>
+  </tr>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h2>Projects</h2>
+            </td>
+          </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+  
+            
+            
+            <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
+                  <source src="images/flash_cache.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/adaramp.JPG' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function flash_cache_start() {
+                    document.getElementById('flash_cache_image').style.opacity = "1";
+                  }
+        
+                  function flash_cache_stop() {
+                    document.getElementById('flash_cache_image').style.opacity = "0";
+                  }
+                  flash_cache_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="papertitle">Autonomous ADA compliant ramp detector and measurment system</span>
+                <br>
+                Project funded by <a href="https://dot.ca.gov">Caltrans</a>
+                <br>
+                <p></p>
+                <p>
+                  Development of an Americans with Disabilities Act of 1990 (ADA) compliant ramp detector and measurement system that will provide Caltrans with the ability to monitor and enforce ADA compliance on pedestrian ramps.
+                </p>
+              </td>
+            </tr>
+
+
+
+            <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
+                  <source src="images/flash_cache.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/iradas-small.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function flash_cache_start() {
+                    document.getElementById('flash_cache_image').style.opacity = "1";
+                  }
+        
+                  function flash_cache_stop() {
+                    document.getElementById('flash_cache_image').style.opacity = "0";
+                  }
+                  flash_cache_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="papertitle">Infrared Driver Assistance Technology for use in Emergency Tow Trucks and Snowplows</span>
+                <br>
+                Project funded by <a href="https://dot.ca.gov">Caltrans</a>
+                <br>
+                <p></p>
+                <p>
+                  Development of an Advanced Driver Assistance Systems (ADAS) that will improve the safety and efficiency of emergency tow truck and snowplow operations under low-visibility conditions, by providing providing operators with warning systems and the ability to observe and avoid obstacles. 
+                </p>
+              </td>
+            </tr>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+              <tr>
+                <td>
+                  <h2>Honors and Awards</h2>
+                </td>
+              </tr>
+            </tbody></table>
+            <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+              
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/ucdavislogo.png"></td>
+                <td width="75%" valign="center">
+                  <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">2024 GGCS Summer Ph.D Fellowship</a>
+                </td>
+              </tr>
+             
+            
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's template</a>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
