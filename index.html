@@ -23,10 +23,94 @@
       alt="Web Analytics Made Easy - Statcounter"
       referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
       <!-- End of Statcounter Code -->
+
+      <style>
+        .timeline {
+            position: relative;
+            margin: 0 auto;
+            padding-left: 65px;
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+    
+        .timeline ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .timeline ul li {
+            position: relative;
+            padding: 0;
+            margin: -5px 0;
+            border-left: 4px solid #000;
+        }
+    
+        .timeline ul li::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 10px;
+            width: 4px;
+            height: 4px;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 50%;
+        }
+    
+        .timeline ul .year {
+            position: absolute;
+            font-weight: bold;
+            left: 22px;
+            bottom: -6px;
+        }
+    
+        .timeline ul .year::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            left: 38px;
+            border-bottom: 4px solid #000;
+            top: 7px;
+        }
+    
+        .timeline ul li a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        .timeline ul li a:hover {
+            text-decoration: underline;
+        }
+    
+        .timeline ul li span {
+            display: block;
+        }
+    
+        /* Flexbox for separating date and event */
+        .event-container {
+            display: flex;
+            gap: 5px;
+            align-items: flex-start;
+        }
+    
+        .date {
+            min-width: 62px;
+            text-align: right;
+            font-weight: bold;
+            padding-top: 5px;
+        }
+    
+        .event {
+            flex-grow: 1;
+            padding: 5px 0 5px 0px;
+        }
+    </style>
   </head>
 
   <body>
-    <table style="width:100%;max-width:1050px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;max-width:850px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -66,18 +150,24 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
-      <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
-        <td class="middle" style="padding:20px;width:50%;vertical-align:top">
-          <br><br>
-          <!-- <li>[2024.09.15] &nbsp; We open-sourced <a href="https://soltanilara.github.io/av-aloha">AV-ALOHA</a>!</li> -->
-          <li>[2024.09.04] &nbsp; Our paper <b>InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation</b> got accepted at CoRL 2024!</li>
-          <li>[2024.06.22] &nbsp; I got married! 🤵🏻👰🏻‍♀️</li>
-        </td>
-        <td class="nodisplay" style="padding:20px;width:50%;vertical-align:middle">
-          <a class="twitter-timeline" href="https://twitter.com/andrewleecw?ref_src=twsrc%5Etfw">Tweets by andrewleecw</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </td>
-      </tr>
+          <div class="timeline">
+            <ul>
+                <li>
+                    <div class="event-container">
+                        <span class="date"><b>09/04 &mdash;</b></span>
+                        <span class="event">Our paper <b>InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation</b> got accepted at CoRL 2024!</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="event-container">
+                        <span class="date"><b>06/22 &mdash;</b></span>
+                        <span class="event">I got married!</span>
+                    </div>
+                </li>
+                <span class="year">2024</span>
+            </ul>
+        </div>
+        <br><br>
 
         
 
@@ -91,24 +181,27 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-        <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
+        <tr onmouseout="avaloha_image_stop()" onmouseover="avaloha_image_start()">
           <td style="padding:20px;width:10%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
-              <source src="images/avaloha.mov" type="video/mp4">
+              <div class="two" id='avaloha_image'>
+                <img src='images/avaloha.png' width="160">
+                </div>
+                <video  width=100% height=100% muted autoplay loop>
+                  <source src="images/avaloha.mov" type="video/mp4">
               Your browser does not support the video tag.
-              </video></div>
-              <img src='images/avaloha.mov' width="160">
+                  </video>
+              
             </div>
             <script type="text/javascript">
-              function eclipse_start() {
-                document.getElementById('eclipse_image').style.opacity = "1";
+              function avaloha_image_start() {
+                document.getElementById('avaloha_image').style.opacity = "1";
               }
       
-              function eclipse_stop() {
-                document.getElementById('eclipse_image').style.opacity = "0";
+              function avaloha_image_stop() {
+                document.getElementById('avaloha_image').style.opacity = "0";
               }
-              eclipse_stop()
+              avaloha_image_stop()
             </script>
           </td>
           <td style="padding:20px;width:90%;vertical-align:middle">
@@ -135,24 +228,27 @@
           </td>
         </tr>
 
-    <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+    <tr onmouseout="interact_image_stop()" onmouseover="interact_image_start()">
       <td style="padding:20px;width:10%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
-          <source src="images/flash_cache.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/interact.mov' width=100%>
+          <div class="two" id='interact_image'>
+            <img src='images/interact.png' width=100%>
+          </div>
+          <video  width=100% muted autoplay loop>
+            <source src="images/interact.mov" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          
         </div>
         <script type="text/javascript">
-          function flash_cache_start() {
-            document.getElementById('flash_cache_image').style.opacity = "1";
+          function interact_image_start() {
+            document.getElementById('interact_image').style.opacity = "1";
           }
 
-          function flash_cache_stop() {
-            document.getElementById('flash_cache_image').style.opacity = "0";
+          function interact_image_stop() {
+            document.getElementById('interact_image').style.opacity = "0";
           }
-          flash_cache_stop()
+          interact_image_stop()
         </script>
       </td>
       <td style="padding:20px;width:90%;vertical-align:middle">
@@ -190,7 +286,7 @@
 <table width="100%" align="center" border="0" cellpadding="20"><tbody>
   
   <tr>
-    <td style="padding:20px;width:10%;vertical-align:middle"><img src="images/laralogo.png"></td>
+    <td style="padding:0px 20px 20px 20px;width:10%;vertical-align:middle"><img src="images/laralogo.png"></td>
     <td width="90%" valign="center">
       Graduate Student Researcher at <a href="https://soltanilab.engineering.ucdavis.edu">Laboratory for AI, Robotics and Automation (LARA)</a>
       <p><em>2023.05 ~ Present, Davis, CA</em></p>
@@ -209,24 +305,24 @@
   
             
             
-            <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+            <tr onmouseout="adaramp_image_stop()" onmouseover="adaramp_image_start()">
               <td style="padding:20px;width:10%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
+                  <div class="two" id='adaramp_image'><video  width=100% muted autoplay loop>
                   <source src="images/flash_cache.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div>
                   <img src='images/adaramp.JPG' width=100%>
                 </div>
                 <script type="text/javascript">
-                  function flash_cache_start() {
-                    document.getElementById('flash_cache_image').style.opacity = "1";
+                  function adaramp_image_start() {
+                    document.getElementById('adaramp_image').style.opacity = "1";
                   }
         
-                  function flash_cache_stop() {
-                    document.getElementById('flash_cache_image').style.opacity = "0";
+                  function adaramp_image_stop() {
+                    document.getElementById('adaramp_image').style.opacity = "0";
                   }
-                  flash_cache_stop()
+                  adaramp_image_stop()
                 </script>
               </td>
               <td style="padding:20px;width:90%;vertical-align:middle">
@@ -243,34 +339,36 @@
 
 
 
-            <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+            <tr onmouseout="iradas_image_stop()" onmouseover="iradas_image_start()">
               <td style="padding:20px;width:10%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
+                  <div class="two" id='iradas_image'>
+                    <img src='images/iradas.png' width=100%>
+                </div>
+                <video  width=100% muted autoplay loop>
                   <source src="images/iradas.mov" type="video/mp4">
                   Your browser does not support the video tag.
-                  </video></div>
-                  <img src='images/iradas.png' width=100%>
+                  </video>
                 </div>
                 <script type="text/javascript">
-                  function flash_cache_start() {
-                    document.getElementById('flash_cache_image').style.opacity = "1";
+                  function iradas_image_start() {
+                    document.getElementById('iradas_image').style.opacity = "1";
                   }
         
-                  function flash_cache_stop() {
-                    document.getElementById('flash_cache_image').style.opacity = "0";
+                  function iradas_image_stop() {
+                    document.getElementById('iradas_image').style.opacity = "0";
                   }
-                  flash_cache_stop()
+                  iradas_image_stop()
                 </script>
               </td>
               <td style="padding:20px;width:90%;vertical-align:middle">
-                  <span class="papertitle">Infrared Driver Assistance Technology for use in Emergency Tow Trucks and Snowplows</span>
+                  <span class="papertitle">Infrared (IR) Advanced Driver Assistance System (ADAS)</span>
                 <br>
                 Project funded by <a href="https://dot.ca.gov">Caltrans</a>
                 <br>
                 <p></p>
                 <p>
-                  Development of an Advanced Driver Assistance Systems (ADAS) that will improve the safety and efficiency of emergency tow truck and snowplow operations under low-visibility conditions, by providing providing operators with warning systems and the ability to observe and avoid obstacles. 
+                  Development of an Infrared Advanced Driver Assistance Systems (ADAS) that will improve the safety and efficiency of emergency tow truck and snowplow operations under low-visibility conditions, by providing providing operators with warning systems and the ability to observe and avoid obstacles. 
                 </p>
               </td>
             </tr>
@@ -285,7 +383,7 @@
             <table width="100%" align="center" border="0" cellpadding="20"><tbody>
               
               <tr>
-                <td style="padding:20px;width:10%;vertical-align:middle"><img src="images/ucdavislogo.png"></td>
+                <td style="padding:0px 20px 20px 20px;width:10%;vertical-align:middle"><img src="images/ucdavislogo.png"></td>
                 <td width="90%" valign="center">
                   2024 GGCS Summer Ph.D Fellowship
                 </td>
