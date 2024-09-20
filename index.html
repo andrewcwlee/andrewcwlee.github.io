@@ -29,7 +29,6 @@
             position: relative;
             margin: 0 auto;
             padding-left: 65px;
-            padding-top: 20px;
             padding-right: 20px;
         }
     
@@ -43,7 +42,7 @@
             position: relative;
             padding: 0;
             margin: -5px 0;
-            border-left: 4px solid #000;
+            border-left: 3px solid #000;
         }
     
         .timeline ul li::before {
@@ -51,8 +50,8 @@
             position: absolute;
             left: -6px;
             top: 10px;
-            width: 4px;
-            height: 4px;
+            width: 5px;
+            height: 5px;
             background-color: #fff;
             border: 2px solid #000;
             border-radius: 50%;
@@ -62,16 +61,15 @@
             position: absolute;
             font-weight: bold;
             left: 22px;
-            bottom: -6px;
         }
     
         .timeline ul .year::after {
             content: '';
             position: absolute;
-            width: 8px;
-            left: 38px;
-            border-bottom: 4px solid #000;
-            top: 7px;
+            width: 9px;
+            left: 36px;
+            border-bottom: 3px solid #000;
+            top: 6.5px;
         }
     
         .timeline ul li a {
@@ -94,12 +92,25 @@
             gap: 5px;
             align-items: flex-start;
         }
+
+        .timeline .bar {
+            position: relative;
+            padding: 0;
+            margin: -5px 0;
+            border-left: 3px solid #000;
+        }
     
         .date {
-            min-width: 62px;
-            text-align: right;
+            min-width: 55px;
+            text-align: left;
             font-weight: bold;
             padding-top: 5px;
+            padding-left: 10px;
+        }
+        .date::after {
+            content: '—';
+            position: absolute;
+            padding: 0px 0px 0px 5px;
         }
     
         .event {
@@ -149,22 +160,25 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <div style="margin-top: 20px;"></div>
 
           <div class="timeline">
             <ul>
                 <li>
                     <div class="event-container">
-                        <span class="date"><b>09/04 &mdash;</b></span>
+                        <span class="date"><b>09/04</b></span>
                         <span class="event">Our paper <b>InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation</b> got accepted at CoRL 2024!</span>
                     </div>
                 </li>
                 <li>
                     <div class="event-container">
-                        <span class="date"><b>06/22 &mdash;</b></span>
-                        <span class="event">I got married!</span>
+                        <span class="date"><b>06/22</b></span>
+                        <span class="event">I got married! <span style="font-size: 11px; display: inline;">🤵🏻👰🏻‍♀️</span></span>
                     </div>
                 </li>
                 <span class="year">2024</span>
+                <span class="bar"></span>
+                </div>
             </ul>
         </div>
         <br><br>
