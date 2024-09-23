@@ -80,24 +80,24 @@ th,
 tr,
 p,
 a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Ubuntu Sans', sans-serif;
   font-size: 14px;
 }
 
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Ubuntu Sans', sans-serif;
   font-size: 14px;
 }
 
 h2 {
   margin: 0;
   font-weight: normal;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Ubuntu Sans', sans-serif;
   font-size: 22px;
 }
 
 .papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Ubuntu Sans', sans-serif;
   font-size: 14px;
   font-weight: 700;
 }
@@ -105,7 +105,7 @@ h2 {
 .name {
   padding-top: 20px;
   margin: 0;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Ubuntu Sans', sans-serif;
   font-size: 32px;
 }
 
@@ -132,4 +132,103 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 65px;
+  padding-right: 20px;
+}
+
+.timeline ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline ul li {
+  position: relative;
+  padding: 0;
+  margin: -5px 0;
+  border-left: 3px solid #000;
+}
+
+.timeline ul li::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.timeline ul .year {
+  position: absolute;
+  font-weight: bold;
+  left: 22px;
+}
+
+.timeline ul .year::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  left: 36px;
+  border-bottom: 3px solid #000;
+  top: 6.5px;
+}
+
+.timeline ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.timeline ul li a:hover {
+  text-decoration: underline;
+}
+
+.timeline ul li span {
+  display: block;
+}
+
+/* Flexbox for separating date and event */
+.event-container {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.timeline .bar {
+  position: relative;
+  padding: 0;
+  margin: -5px 0;
+  border-left: 3px solid #000;
+}
+
+.date {
+  min-width: 55px;
+  text-align: left;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.date::after {
+  content: '—';
+  position: absolute;
+  padding: 0px 0px 0px 5px;
+}
+
+.event {
+  flex-grow: 1;
+  padding: 5px 0 5px 0px;
+}
+.news-emoji {
+  font-size: 11px; 
+  display: inline !important; 
+  padding-right: 5px;
 }
