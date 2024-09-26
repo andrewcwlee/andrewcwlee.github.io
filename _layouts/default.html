@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
+  <meta name="description" content="Martin Saveski">
+  <meta name="author" content="Martin Saveski">
+  <meta property="og:title" content="Martin Saveski" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.martinsaveski.com" />
+  <meta property="og:site_name" content="Martin Saveski" />
+  <link rel="canonical" href="http://www.martinsaveski.com" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'> -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
+
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
+
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/font-awesome-4.7.0/css/font-awesome.min.css" | prepend: site.baseurl }}>
+
+  <!-- Academicons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/academicons-1.8.6/css/academicons.min.css" | prepend: site.baseurl }}>
+
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/skeleton_tabs/skeleton-tabs.css" | prepend: site.baseurl }}>
+  <script src={{ "/libs/external/skeleton_tabs/skeleton-tabs.js" | prepend: site.baseurl }}></script>
+
+  <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/timeline.css" | prepend: site.baseurl }}>
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="stylesheet" href={{ "/libs/external/github-prettify-theme.css" | prepend: site.baseurl }}>-->
+  <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
+  <link rel="shortcut icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
+
+
+  <script type="text/javascript">
+    var sc_project=13038607; 
+    var sc_invisible=1; 
+    var sc_security="3051b5a8"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+    Statcounter" href="https://statcounter.com/" target="_blank"><img
+    class="statcounter" src="https://c.statcounter.com/13038607/0/3051b5a8/1/"
+    alt="Web Analytics Made Easy - Statcounter"
+    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <section class="header">
+      <div class="row">
+        <div class="four columns">
+          <a href="{{ site.baseurl }}/">
+            <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'>
+          </a>
+        </div>
+        
+        <div class="eight columns main-description">
+          <div  style="text-align: center;">
+            <h1>{{ site.data.main_info.name }}</h1>
+            <p style="color: #666">{{ site.data.main_info.title }} | <a style="color: #666" href="{{ site.data.main_info.email_link }}">{{ site.data.main_info.email }}</a></p>
+          </div>
+            <br>
+            {{ site.data.main_info.description }}
+            <p style="text-align: center; margin-top: 1.5em;">
+              <a style="margin: 0px 0.3em; display: inline-block;" href="{{ site.data.main_info.twitter }}">
+                <!-- <i style="margin: 0px 3px; " class="fa fa-twitter" aria-hidden="true"></i> -->
+                 X (Twitter)
+              </a>
+              /
+              <a style="margin: 0px 0.3em; display: inline-block;" href="{{ site.data.main_info.linkedin }}">
+                <!-- <i style="margin: 0px 3px; " class="fa fa-linkedin-square" aria-hidden="true"></i> -->
+                 Linkedin
+              </a>
+              /
+              <a style="margin: 0px 0.3em; display: inline-block;" href="{{ site.data.main_info.github }}">
+                <!-- <i style="margin: 0px 3px; " class="fa fa-github" aria-hidden="true"></i> -->
+                 GitHub
+              </a>
+              /
+              <a style="margin: 0px 0.3em; display: inline-block;" href="{{ site.data.main_info.google_scholar }}">
+                Google Scholar
+              </a>
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href={{ "#news" | prepend: site.baseurl }}>News</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "#publications" | prepend: site.baseurl }}>Publications</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "#experiences" | prepend: site.baseurl }}>Experiences</a></li>
+          <!-- <li class="navbar-item"><a class="navbar-link" href={{ "#projects" | prepend: site.baseurl }}>Projects</a></li> -->
+          <li class="navbar-item"><a class="navbar-link" href={{ "#cv" | prepend: site.baseurl }}>Vitae</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    {{ content}}
+
+    <div class="footer">
+      <div style="margin-bottom: 1em;">
+        Mix of <a href="https://github.com/msaveski/www_personal" target="_blank">Martin Saveski</a> and <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>'s website template
+      </div>
+      <div class="row">
+        <div class="four columns">
+          {{ site.data.main_info.name }}
+        </div>
+        <div class="four columns">
+          {{ site.data.main_info.email }}
+        </div>
+        <div class="four columns">
+          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
+            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Google Analytics -->
+  {% include google_analytics.html %}
+
+  <!-- do not remove -->
+  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

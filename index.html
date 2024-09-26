@@ -1,348 +1,93 @@
-<!DOCTYPE HTML>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+---
+layout: default
+title: Home
+---
 
-    <title>Andrew Lee</title>
-
-    <meta name="author" content="Jon Barron">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <!-- Default Statcounter code for github.io http://andrewcwlee.github.io -->
-    <script type="text/javascript">
-      var sc_project=13038607; 
-      var sc_invisible=1; 
-      var sc_security="3051b5a8"; 
-      </script>
-      <script type="text/javascript"
-      src="https://www.statcounter.com/counter/counter.js" async></script>
-      <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-      Statcounter" href="https://statcounter.com/" target="_blank"><img
-      class="statcounter" src="https://c.statcounter.com/13038607/0/3051b5a8/1/"
-      alt="Web Analytics Made Easy - Statcounter"
-      referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-      <!-- End of Statcounter Code -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
-    <table style="width:100%;max-width:850px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Andrew Lee
-                </p>
-                <p>
-                  I am a Ph.D. student in the Department of Computer Science at the <a href="https://ucdavis.edu/">University of California, Davis</a>, where I am part of the <a href="https://soltanilab.engineering.ucdavis.edu">Laboratory for AI, Robotics and Automation (LARA)</a>, advised by <a href="https://faculty.engineering.ucdavis.edu/soltani/">Iman Soltani</a>. Previously, I received a B.S. in Mechanical Engineering from <a href="https://www.hanyang.ac.kr/web/eng/home">Hanyang University</a> in Seoul, South Korea.
-                </p>
-                <p> 
-                  I am interested in making robots learn to manipulate objects and interact with the world in ways similar to humans, mimicking how we coordinate our arms and eyes to perform tasks.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:awclee@ucdavis.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/TODO">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=cfIJXfoAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/andrewcwlee/">Linkedin</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/andrewleecw">X (Twitter)</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/andrewcwlee/">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.JPG" class="hoverZoomLink">
-              </td>
-            </tr>
-          </tbody></table>
-
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2>News</h2>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <div style="margin-top: 20px;"></div>
-
-          <div class="timeline">
-            <ul>
-                <li>
-                    <div class="event-container">
-                        <span class="date"><b>09/04</b></span>
-                        <span class="event"><span class="news-emoji">🎉</span>Our paper <b>InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation</b> got accepted at CoRL 2024!</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="event-container">
-                        <span class="date"><b>06/22</b></span>
-                        <span class="event"><span class="news-emoji">🤵🏻👰🏻‍♀️</span>I got married!</span>
-                    </div>
-                </li>
-                <span class="year">2024</span>
-                <span class="bar"></span>
-                </div>
-            </ul>
+<div class="docs-section" id="news">
+  <h4>News</h4>
+  <div class="timeline">
+    {% for year in site.data.news.news %}
+    <ul>
+      {% for news in year[1] %}
+      <li>
+        <div class="event-container">
+          <span class="date">{{ news[0] }}</span>
+          <span class="event">{{news[1]}}</span>
         </div>
-        <br><br>
-
-        
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Publications</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      </li>
+      {% endfor %}
+      <span class="year">{{year[0]}}</span>
+      <span class="bar"></span>
+    </ul>
+    {% endfor %}
+  </div>
+</div>
 
 
-        <tr onmouseout="avaloha_image_stop()" onmouseover="avaloha_image_start()">
-          <td style="padding:20px;width:10%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='avaloha_image'>
-                
-                <video  width=100% height=100% muted autoplay loop>
-                  <source src="images/avaloha.mov" type="video/mp4">
-              Your browser does not support the video tag.
-                  </video>
-                </div>
-                <img src='images/avaloha.png' width="160">
-              
-            </div>
-            <script type="text/javascript">
-              function avaloha_image_start() {
-                document.getElementById('avaloha_image').style.opacity = "1";
-              }
-      
-              function avaloha_image_stop() {
-                document.getElementById('avaloha_image').style.opacity = "0";
-              }
-              avaloha_image_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:90%;vertical-align:middle">
-            <a href="https://dorverbin.github.io/eclipse">
-              <span class="papertitle">Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation</span>
-            </a>
-            <br>
-            <a href="https://ian-chuang.github.io/">Ian Chuang*</a>,
-            <strong>Andrew Lee*</strong>,
-            Dechen Gao</a>,
-            <a href="https://faculty.engineering.ucdavis.edu/soltani/biography/">Iman Soltani</a> <br>
-            *Equal Contribution<br>
-            <em>In review at a conference</em>
-            <br>
-            <a href="https://soltanilara.github.io/TODO">project page</a>
-            /
-            <a href="https://www.youtube.com/TODO">video</a>
-            /
-            <a href="https://arxiv.org/abs/TODO">arXiv</a>
-            <p></p>
-            <p>
-              We introduce AV-ALOHA, a bimanual robot system with 7-DoF Active Vision which is solely tasked with finding the optimal perspective for a given task.
-            </p>
-          </td>
-        </tr>
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
 
-    <tr onmouseout="interact_image_stop()" onmouseover="interact_image_start()">
-      <td style="padding:20px;width:10%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='interact_image'>
-            <video  width=100% muted autoplay loop>
-              <source src="images/interact.mov" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-            
-          </div>
-          
-          <img src='images/interact.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function interact_image_start() {
-            document.getElementById('interact_image').style.opacity = "1";
-          }
+  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
+  <b><sup>‡</sup> indicates equal contribution.</b>
+  </p>
 
-          function interact_image_stop() {
-            document.getElementById('interact_image').style.opacity = "0";
-          }
-          interact_image_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:90%;vertical-align:middle">
-        <a href="TODO">
-          <span class="papertitle">InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation</span>
-        </a>
-        <br>
-				<strong>Andrew Lee</strong>,
-        <a href="https://ian-chuang.github.io/">Ian Chuang</a>,
-        Ling-Yuan Chen,
-        <a href="https://faculty.engineering.ucdavis.edu/soltani/biography/">Iman Soltani</a> <br>
-        <em>Conference on Robot Learning (CoRL)</em>, 2024
-        <br>
-        <a href="TODO">project page</a>
-        /
-        <a href="https://openreview.net/forum?id=lKGRPJFPCM">OpenReview</a>
-        /
-        <a href="https://www.arxiv.org/abs/2409.07914">arXiv</a>
-        <p></p>
-        <p>
-          InterACT is a novel imitation learning framework for bimanual manipulation that integrates hierarchical attention to capture inter-dependencies between dual-arm joint states and visual inputs. 
-        </p>
-      </td>
-    </tr>
-</tbody></table>
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-all">All</div></li>
+    <li><div class="button" data-ref="#papers-accepted">Accepted</div></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-all">
+      <div class="paper">
+        {% for paper in site.data.publications.papers %}
+        {% include publications.html %}
+        {% endfor %}
+    </div>
+  </div>
+    <div class="tab-pane" id="papers-accepted">
+      <div class="paper">
+      {% assign accepted_papers = site.data.publications.papers | where: "accepted", "y" %}
+      {% for paper in accepted_papers %}
+        {% include publications.html %}
+        {% endfor %}
+  </div>
+</div>
 
+<div class="docs-section" id="experiences">
+  <h4>Experiences</h4>
 
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-  <tr>
-    <td>
-      <h2>Experiences</h2>
-    </td>
-  </tr>
-</tbody></table>
-<table width="100%" align="center" border="0" cellpadding="20"><tbody>
+  <div class="row">
+  <div class="three columns">
+    <img style="display: block; width: 100%; max-width: 160px;" src="assets/images/laralogo.png">
+  </div>
   
-  <tr>
-    <td style="padding:0px 20px 20px 20px;width:10%;vertical-align:middle"><img style="width: 160px;" src="images/laralogo.png"></td>
-    <td width="90%" valign="center">
-      Graduate Student Researcher at <a href="https://soltanilab.engineering.ucdavis.edu">Laboratory for AI, Robotics and Automation (LARA)</a>
-      <br><em>full-time</em>
-      <br><em>2023.05 ~ Present, Davis, CA</em>
-    </td>
-  </tr>
+  <div class="nine columns">
+    <p>Graduate Student Researcher at <a href="https://soltanilab.engineering.ucdavis.edu">Laboratory for AI, Robotics and Automation (LARA)</a>
+      <br><em>2023.05 ~ Present, Davis, CA</em></p>
+  </div>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2>Projects</h2>
-            </td>
-          </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+</div>
 
-  
-            
-            
-            <tr onmouseout="adaramp_image_stop()" onmouseover="adaramp_image_start()">
-              <td style="padding:20px;width:10%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='adaramp_image'>
-                    <video  width=100% muted autoplay loop>
-                  <source src="images/flash_cache.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div>
-                  <img src='images/adaramp.JPG' width=100%>
-                </div>
-                <script type="text/javascript">
-                  function adaramp_image_start() {
-                    document.getElementById('adaramp_image').style.opacity = "1";
-                  }
-        
-                  function adaramp_image_stop() {
-                    document.getElementById('adaramp_image').style.opacity = "0";
-                  }
-                  adaramp_image_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:90%;vertical-align:middle">
-                  <span class="papertitle">Autonomous ADA compliant ramp detector and measurment system</span>
-                <br>
-                Project funded by <a href="https://dot.ca.gov">Caltrans</a>
-                <br>
-                <p></p>
-                <p>
-                  Development of an Americans with Disabilities Act of 1990 (ADA) compliant ramp detector and measurement system that will provide Caltrans with the ability to monitor and enforce ADA compliance on pedestrian ramps.
-                </p>
-              </td>
-            </tr>
+</div>
 
+<!-- <div class="docs-section" id="projects">
+  <h4>Projects</h4>
+  <div class="tab-content">
+      {% for project in site.data.projects.projects %}
+        {% include projects.html %}
+      {% endfor %}
+  </div>
+</div> -->
 
+<!-- ========== RESUME ========== -->
+<div class="docs-section" id="cv">
+  <h4>Vitae</h4>
 
-            <tr onmouseout="iradas_image_stop()" onmouseover="iradas_image_start()">
-              <td style="padding:20px;width:10%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='iradas_image'>
-                    <video  width=100% muted autoplay loop>
-                      <source src="images/iradas.mov" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
-                </div>
-                
-                  <img src='images/iradas.png' width=100%>
-                </div>
-                <script type="text/javascript">
-                  function iradas_image_start() {
-                    document.getElementById('iradas_image').style.opacity = "1";
-                  }
-        
-                  function iradas_image_stop() {
-                    document.getElementById('iradas_image').style.opacity = "0";
-                  }
-                  iradas_image_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:90%;vertical-align:middle">
-                  <span class="papertitle">Infrared (IR) Advanced Driver Assistance System (ADAS)</span>
-                <br>
-                Project funded by <a href="https://dot.ca.gov">Caltrans</a>
-                <br>
-                <p></p>
-                <p>
-                  Development of an Infrared Advanced Driver Assistance Systems (ADAS) that will improve the safety and efficiency of emergency tow truck and snowplow operations under low-visibility conditions, by providing providing operators with warning systems and the ability to observe and avoid obstacles. 
-                </p>
-              </td>
-            </tr>
+  <p>Full curriculum vitae in <a href={{ "/assets/cv/TODO.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
 
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-              <tr>
-                <td>
-                  <h2>Honors and Awards</h2>
-                </td>
-              </tr>
-            </tbody></table>
-            <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-              
-              <tr>
-                <td style="padding:0px 20px 20px 20px;width:10%;vertical-align:middle"><img src="images/ucdavislogo.png"></td>
-                <td width="90%" valign="center">
-                  2024 GGCS Summer Ph.D Fellowship
-                </td>
-              </tr>
-             
-            
-            
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's template</a>
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-
-
-<style>
-  @media screen and (max-width: 850px) {
-    .nodisplay {
-      display: none;
-    }
-    .middle {
-      vertical-align: middle !important;
-    }
-  }
-</style>
+</div>
+<!-- 
+<div class="docs-section" id="template">
+  <h4>Acknowledgement</h4>
+  Template from <a href="https://github.com/msaveski/www_personal" target="_blank">Martin Saveski</a> and <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>. It has been modified to fit my needs and preferences.
+</div>   -->

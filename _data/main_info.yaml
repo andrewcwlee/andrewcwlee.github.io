@@ -1,0 +1,16 @@
+name: "Andrew Lee"
+title: "PhD Student, University of California, Davis"
+email: "awclee [AT] ucdavis [DOT] edu"
+email_link: "mailto:awclee@ucdavis.edu"
+profile_pic: "/assets/profile-pics/profile.jpg"
+twitter: "https://twitter.com/andrewleecw"
+linkedin: "https://www.linkedin.com/in/andrewcwlee"
+github: "https://github.com/andrewcwlee"
+google_scholar: "https://scholar.google.com/citations?user=cfIJXfoAAAAJ"
+google_analystics_tracking_id: ''
+description: '<p>
+              I am a Ph.D. student in the Department of Computer Science at the <a href="https://ucdavis.edu/">University of California, Davis</a>, where I am part of the <a href="https://soltanilab.engineering.ucdavis.edu">Laboratory for AI, Robotics and Automation (LARA)</a>, advised by <a href="https://faculty.engineering.ucdavis.edu/soltani/">Iman Soltani</a>. Previously, I received a B.S. in Mechanical Engineering from <a href="https://www.hanyang.ac.kr/web/eng/home">Hanyang University</a> in Seoul, South Korea.
+            </p>
+            <p> 
+              I am interested in making robots learn to manipulate objects and interact with the world in ways similar to humans, mimicking how we coordinate our arms and eyes to perform tasks.
+            </p>'

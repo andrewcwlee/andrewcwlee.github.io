@@ -1,0 +1,42 @@
+{% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
+
+          <div class="three columns" onmouseout="{{project.abbv}}_image_stop()" onmouseover="{{project.abbv}}_image_start()">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <div class="one-proj">
+                    <div class="two-proj" id='{{project.abbv}}_image'>
+                      <video  width=100% muted autoplay loop>
+                        <source src="{{project.thumbnail_video}}" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                  </div>
+                  
+                    <img src='{{project.thumbnail_image}}' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function {{project.abbv}}_image_start() {
+                      document.getElementById('{{project.abbv}}_image').style.opacity = "1";
+                    }
+          
+                    function {{project.abbv}}_image_stop() {
+                      document.getElementById('{{project.abbv}}_image').style.opacity = "0";
+                    }
+                    {{project.abbv}}_image_stop()
+                  </script>
+                </div>
+
+                <div class="project-caption">
+                  <b>{{ project.title }}</b> <br/>
+                  <em>{{ project.subtitle }}</em>
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}

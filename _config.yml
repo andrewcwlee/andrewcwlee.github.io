@@ -1,0 +1,9 @@
+source:      .
+destination: ./_site
+includes:    ./_includes
+baseurl: 
+
+collections:
+  projects:
+    output: false
+
