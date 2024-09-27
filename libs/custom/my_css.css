@@ -254,6 +254,9 @@ h4 {
   .ex-image {
     margin-top: 1em;
   }
+  .two {
+    display: none;
+  }
 }
 
 /* Larger than phone */
