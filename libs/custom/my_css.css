@@ -207,26 +207,57 @@ h4 {
 
 .venue-tag {
   position: relative;
-  background-color: rgb(64, 111, 158);
-  top: -15px;
+  background-color: #FFDF80;
+  top: -140px;
   text-align: center;
   max-width: fit-content;
   font-size: 11px;
-  color: white;
+  color: #333333;
   font-weight: bold;
   line-height: 13px;
   padding: 1px 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
   }
 
 .button-link {
   min-width: 60px;
+  font-weight: bold !important;
+  border: 1px solid;
 }
-/* table {
-  border-bottom-color: white !important;
-} */
+.button-link:hover {
+  background-color:  #fafafa;
+  border: 1px solid #333;
+}
+
+#news {
+  background-color:  #fafafa;
+  padding: 2em;
+}
+.ex-image {
+  display: block; 
+  width: 120px; 
+  /* max-width: 120px; */
+}
+
+.announcements {
+  margin-bottom: 2em;
+  color: #76236C;
+}
+
+@media (max-width: 580px) {
+  .main-description {
+    width: 100% !important;
+  }
+  .profile {
+    display: none;
+  }
+  .ex-image {
+    margin-top: 1em;
+  }
+}
 
 /* Larger than phone */
-@media (min-width: 550px) {
+@media (min-width: 580px) {
   .header {
     margin-top: 5rem; }
 }

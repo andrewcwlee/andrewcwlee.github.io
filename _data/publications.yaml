@@ -3,16 +3,16 @@ papers:
   - title: "Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation"
     authors: [Ian Chuang*, Andrew Lee*, Dechen Gao, Iman Soltani]
     abstract:  "We introduce AV-ALOHA, a bimanual robot system with 7-DoF Active Vision which is solely tasked with finding the optimal perspective for a given task."
-    venue: "arXiv Preprint, 2024"
+    venue: "arXiv preprint, 2024"
     venue_abbr: 
     links:
         PDF: "/assets/publications/av-aloha/paper.pdf"
         website: "https://soltanilara.github.io/av-aloha/"
         video: "https://www.youtube.com/watch?v=DwJzdaKM4N0"
-        code: "/"
-        data: "/"
-        arXiv: "/"
+        arXiv: "https://arxiv.org/abs/2409.17435"
         bib: "/assets/publications/av-aloha/bib.txt"
+        code (coming soon): "/"
+        data (coming soon): "/"
     abbv: "avaloha"
     thumbnail_video: "assets/images/avaloha.mov"
     thumbnail_image: "assets/images/avaloha.png"
