@@ -38,14 +38,14 @@
             {% if clean_author == site.data.main_info.name %}
               <b>{{clean_author}}</b><sup>‡</sup>
             {% else %}
-              <a href="{{ site.data.coauthors.coauthors[clean_author] }}">{{ clean_author }}</a><sup>‡</sup>
+              <a target="_blank" href="{{ site.data.coauthors.coauthors[clean_author] }}">{{ clean_author }}</a><sup>‡</sup>
             {% endif %}
           {% else %}
           {% if author == site.data.main_info.name %}
           <b>{{author}}</b>
         {% else %}
         {% if site.data.coauthors.coauthors[author] %}
-            <a href="{{ site.data.coauthors.coauthors[author] }}">{{ author }}</a>
+            <a target="_blank" href="{{ site.data.coauthors.coauthors[author] }}">{{ author }}</a>
           {% else %}
             {{ author }}
             {% endif %}

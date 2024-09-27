@@ -61,7 +61,7 @@ title: Home
     <tr>
       <td style="width:10%;vertical-align:middle;padding:0 35px;"><img style="width: 130px;" src="{{ experience.image }}"></td>
       <td width="90%" valign="center">
-        {{ experience.title }} at <a href="{{ experience.link }}">{{ experience.place }}</a></a>
+        {{ experience.title }} at <a target="_blank" href="{{ experience.link }}">{{ experience.place }}</a></a>
         <br><em>{{ experience.date }}, {{ experience.location }}</em>
       </td>
     </tr>
@@ -87,8 +87,4 @@ title: Home
   <p>Full curriculum vitae in <a href={{ "/assets/cv/cv_andrew_lee.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
   <object class="pdf" data="/assets/cv/cv_andrew_lee.pdf" type='application/pdf'></object>
 </div>
-<!-- 
-<div class="docs-section" id="template">
-  <h4>Acknowledgement</h4>
-  Template from <a href="https://github.com/msaveski/www_personal" target="_blank">Martin Saveski</a> and <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>. It has been modified to fit my needs and preferences.
-</div>   -->
+
