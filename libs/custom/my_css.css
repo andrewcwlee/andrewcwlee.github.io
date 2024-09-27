@@ -244,6 +244,12 @@ h4 {
   color: #76236C;
 }
 
+.pdf {
+  width: 70%;
+  margin: 0 15%;
+  height: 400px;
+}
+
 @media (max-width: 580px) {
   .main-description {
     width: 100% !important;
