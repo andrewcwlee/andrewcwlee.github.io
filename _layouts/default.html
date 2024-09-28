@@ -21,7 +21,7 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'> -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -120,26 +120,49 @@
           </a>
         </div>
       </div>
+      <div class="announcements">
+        <i style="margin-right: 5px; " class="fa-solid fa-bullhorn"></i>
+        {% for announcement in site.data.announcements.announcements %}
+        <div style="display: inline;">{{ announcement }}</div><br>
+        {% endfor %}
+      </div>
     </section>
 
-    <div class="announcements">
-      {% for announcement in site.data.announcements.announcements %}
-      <div><i class="fa-solid fa-circle-exclamation"></i> {{ announcement }}</div>
-      {% endfor %}
-    </div>
-
+  
     <div class="navbar-spacer"></div>
     <nav class="navbar">
       <div class="container">
         <ul class="navbar-list">
-          <!-- <li class="navbar-item"><a class="navbar-link" href={{ "#news" | prepend: site.baseurl }}>News</a></li> -->
+          <li class="navbar-item"><a class="navbar-link" href={{ "#news" | prepend: site.baseurl }}>News</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "#publications" | prepend: site.baseurl }}>Publications</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "#experiences" | prepend: site.baseurl }}>Experiences</a></li>
-          <!-- <li class="navbar-item"><a class="navbar-link" href={{ "#projects" | prepend: site.baseurl }}>Projects</a></li> -->
           <li class="navbar-item"><a class="navbar-link" href={{ "#cv" | prepend: site.baseurl }}>Curriculum Vitae</a></li>
         </ul>
       </div>
     </nav>
+
+
+    <div class="docs-section" id="news">
+      <h4>News</h4>
+      <div class="timeline">
+        {% for year in site.data.news.news %}
+        <ul>
+          {% for news in year[1] %}
+          <li>
+            <div class="event-container">
+              <span class="date">{{ news[0] }}</span>
+              <span class="event">{{news[1]}}</span>
+            </div>
+          </li>
+          {% endfor %}
+          <span class="year">{{year[0]}}</span>
+          <span class="bar"></span>
+        </ul>
+        {% endfor %}
+      </div>
+    </div>
+
+
 
     {{ content}}
 

@@ -3,27 +3,6 @@ layout: default
 title: Home
 ---
 
-<div class="docs-section" id="news">
-  <!-- <h4>News</h4> -->
-  <div class="timeline">
-    {% for year in site.data.news.news %}
-    <ul>
-      {% for news in year[1] %}
-      <li>
-        <div class="event-container">
-          <span class="date">{{ news[0] }}</span>
-          <span class="event">{{news[1]}}</span>
-        </div>
-      </li>
-      {% endfor %}
-      <span class="year">{{year[0]}}</span>
-      <span class="bar"></span>
-    </ul>
-    {% endfor %}
-  </div>
-</div>
-
-
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
