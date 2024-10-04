@@ -91,13 +91,14 @@ h4 {
   padding: 0;
   margin: -5px 0;
   border-left: 3px solid #333;
+  line-height: 15px;
 }
 
 .timeline ul li::before {
   content: '';
   position: absolute;
   left: -6px;
-  top: 12px;
+  top: 8.5px;
   width: 5px;
   height: 5px;
   background-color: #fff;
@@ -119,7 +120,7 @@ h4 {
   content: '';
   position: absolute;
   width: 9px;
-  left: 35px;
+  left: 38px;
   border-bottom: 3px solid #333;
   top: 10px;
 }
