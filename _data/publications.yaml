@@ -4,7 +4,6 @@ papers:
     authors: [Ian Chuang*, Andrew Lee*, Dechen Gao, Iman Soltani]
     abstract:  "We introduce AV-ALOHA, a bimanual robot system with 7-DoF Active Vision which is solely tasked with finding the optimal perspective for a given task."
     venue: "arXiv preprint, 2024"
-    venue_abbr: 
     links:
         PDF: "/assets/publications/av-aloha/paper.pdf"
         website: "https://soltanilara.github.io/av-aloha/"
@@ -23,7 +22,6 @@ papers:
     authors: [Andrew Lee, Ian Chuang, Ling-Yuan Chen, Iman Soltani]
     abstract: "InterACT is a novel imitation learning framework for bimanual manipulation that integrates hierarchical attention to capture inter-dependencies between dual-arm joint states and visual inputs."
     venue: "Conference on Robot Learning (CoRL), 2024"
-    venue_abbr: "CoRL'24"
     links:
         PDF: "/assets/publications/interact/paper.pdf"
         OpenReview: "https://openreview.net/forum?id=lKGRPJFPCM"

@@ -121,9 +121,9 @@
         </div>
       </div>
       <div class="announcements">
-        <i style="margin-right: 5px; " class="fa-solid fa-bullhorn"></i>
+        
         {% for announcement in site.data.announcements.announcements %}
-        <div style="display: inline;">{{ announcement }}</div><br>
+        <i style="margin-right: 5px; " class="fa-solid fa-bullhorn"></i> <div style="display: inline-block;">{{ announcement }}</div><br>
         {% endfor %}
       </div>
     </section>
@@ -168,8 +168,7 @@
 
     <div class="footer">
       <div style="margin-bottom: 1em; background-color: #fafafa; font-size: 14px; padding: 0.5em">
-        <div>This website is based on templates from <a href="https://github.com/msaveski/www_personal" target="_blank">Martin Saveski</a> and <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.<br>
-          The source code is available <a target="_blank" href="https://github.com/andrewcwlee/andrewcwlee.github.io">here</a>, but use it at your own risk.</div>
+        <div>This website is based on templates from <a href="https://github.com/msaveski/www_personal" target="_blank">Martin Saveski</a> and <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.</div>
       </div>
       <div class="row">
         <div class="four columns">
@@ -198,11 +197,6 @@
   </div>
 </div>
 
-  <!-- Google Analytics -->
-  {% include google_analytics.html %}
-
-  <!-- do not remove -->
-  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

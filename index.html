@@ -27,7 +27,7 @@ title: Home
       <div class="paper">
       {% assign accepted_papers = site.data.publications.papers | where: "accepted", "y" %}
       {% for paper in accepted_papers %}
-        {% include publications.html %}
+        {% include publications-accepted.html %}
         {% endfor %}
   </div>
 </div>
