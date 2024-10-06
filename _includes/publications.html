@@ -37,9 +37,9 @@
             <!-- Remove the "*" and look up the author in coauthors -->
             {% assign clean_author = author | replace: "*", "" %}
             {% if clean_author == site.data.main_info.name %}
-              <b>{{clean_author}}</b><sup>‡</sup>
+              <b>{{clean_author}}</b><sup class="dagger-bold">‡</sup>
             {% else %}
-              <a target="_blank" href="{{ site.data.coauthors.coauthors[clean_author] }}">{{ clean_author }}</a><sup>‡</sup>
+              <a target="_blank" href="{{ site.data.coauthors.coauthors[clean_author] }}">{{ clean_author }}</a><sup class="dagger">‡</sup>
             {% endif %}
           {% else %}
           {% if author == site.data.main_info.name %}

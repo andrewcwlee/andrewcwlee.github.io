@@ -85,7 +85,7 @@
       <div class="row">
 
         
-        <div class="eight columns main-description">
+        <div class="nine columns main-description">
           <div  style="text-align: center;">
             <h1>{{ site.data.main_info.name }}</h1>
             <p style="color: #666">{{ site.data.main_info.title }}</p>
@@ -114,7 +114,7 @@
               </a>
             </p>
         </div>
-        <div class="four columns profile">
+        <div class="three columns profile">
           <a href="{{ site.baseurl }}/">
             <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'>
           </a>
@@ -133,6 +133,7 @@
     <nav class="navbar">
       <div class="container">
         <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href={{ "#featured" | prepend: site.baseurl }}>Featured</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "#news" | prepend: site.baseurl }}>News</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "#publications" | prepend: site.baseurl }}>Publications</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "#experiences" | prepend: site.baseurl }}>Experiences</a></li>
@@ -140,6 +141,11 @@
         </ul>
       </div>
     </nav>
+
+    <div class="docs-section" id="featured" style="background-color: #fafafa; font-family: 'Lato', sans-serif; margin: 1em;">
+      <!-- <h4>Featured</h4> -->
+      {% include featured.html %}
+    </div>
 
 
     <div class="docs-section" id="news">
@@ -151,11 +157,11 @@
           <li>
             <div class="event-container">
               <span class="date">{{ news[0] }}</span>
-              <span class="event">{{news[1]}}</span>
+              <span class="event">{{ news[1] }}</span>
             </div>
           </li>
           {% endfor %}
-          <span class="year">{{year[0]}}</span>
+          <span class="year">{{ year[0] }}</span>
           <span class="bar"></span>
         </ul>
         {% endfor %}
