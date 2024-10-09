@@ -41,7 +41,8 @@ title: Home
       <td style="width:10%;vertical-align:middle;padding:0 35px;"><img style="width: 130px;" src="{{ experience.image }}"></td>
       <td width="90%" valign="center">
         {{ experience.title }} at <a target="_blank" href="{{ experience.link }}">{{ experience.place }}</a></a>
-        <br><em>{{ experience.date }}, {{ experience.location }}</em>
+        <div>{{ experience.location }}</div>
+        <em>{{ experience.date }}</em>
       </td>
     </tr>
     {% endfor %}
