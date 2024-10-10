@@ -38,26 +38,25 @@
             {% assign clean_author = author | replace: "*", "" %}
             {% if clean_author == site.data.main_info.name %}
               <b>{{clean_author}}</b><sup class="dagger-bold">‡</sup>
-            {% else %}
+            {% else -%}
               <a target="_blank" href="{{ site.data.coauthors.coauthors[clean_author] }}">{{ clean_author }}</a><sup class="dagger">‡</sup>
-            {% endif %}
+            {%- endif %}
           {% else %}
-          {% if author == site.data.main_info.name %}
-          <b>{{author}}</b>
-        {% else %}
-        {% if site.data.coauthors.coauthors[author] %}
-            <a target="_blank" href="{{ site.data.coauthors.coauthors[author] }}">{{ author }}</a>
-          {% else %}
-            {{ author }}
+            {% if author == site.data.main_info.name -%}
+              <b>{{author}}</b>
+            {%- else %}
+              {% if site.data.coauthors.coauthors[author] -%}
+                <a target="_blank" href="{{ site.data.coauthors.coauthors[author] }}">{{ author }}</a>
+              {%- else -%}
+                {{ author }}
+              {%- endif -%}
             {% endif %}
-          {% endif %}
           {% endif %}
           
           <!-- Add a comma unless this is the last author -->
-          {% unless last_author %}
-          ,
-          {% endunless %}
+          {% unless last_author -%},{%- endunless %}
         {% endfor %}
+        
         
         
         </p>

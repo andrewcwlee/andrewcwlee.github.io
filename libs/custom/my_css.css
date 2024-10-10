@@ -2,7 +2,7 @@ h4 {
   letter-spacing: .1rem; 
   margin-bottom: 0.5em;}
 .container {
-  max-width: 1170px; 
+  max-width: 1280px; 
 }
 .header {
   margin-top: 60px;
@@ -77,8 +77,10 @@ h4 {
 .timeline {
   position: relative;
   margin: 0 auto;
-  padding-left: 44px;
-  padding-right: 20px;
+  /* padding-left: 3px;
+  padding-right: 5px; */
+  /* max-height: 300px; */
+  /* overflow-y: scroll; */
 }
 
 .timeline ul {
@@ -91,7 +93,7 @@ h4 {
   position: relative;
   padding: 0;
   margin: -5px 0;
-  border-left: 5px solid #333;
+  /* border-left: 5px solid #333; */
   line-height: 17px;
 }
 
@@ -102,9 +104,9 @@ h4 {
   top: 9px;
   width: 5px;
   height: 5px;
-  background-color: #fff;
+  /* background-color: #fff;
   border: 2px solid #333;
-  border-radius: 50%;
+  border-radius: 50%; */
 }
 
 .timeline ul .year {
@@ -149,21 +151,30 @@ h4 {
 .timeline .bar {
   position: relative;
   padding: 0;
-  margin: -5px 0;
+  /* margin: -5px 0; */
   border-left: 5px solid #333;
 }
 
 .date {
+  min-width: 95px;
+  text-align: left;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+/* .date::after {
+  content: '—';
+  position: absolute;
+  padding: 0px 0px 0px 5px;
+} */
+
+.date-no {
   min-width: 55px;
   text-align: left;
   font-weight: bold;
   padding-top: 5px;
   padding-left: 10px;
-}
-.date::after {
-  content: '—';
-  position: absolute;
-  padding: 0px 0px 0px 5px;
+  color: #76236C;
 }
 
 .event {
@@ -262,9 +273,7 @@ h4 {
   .main-description {
     width: 100% !important;
   }
-  .profile {
-    display: none;
-  }
+
   .ex-image {
     margin-top: 1em;
   }
@@ -273,6 +282,7 @@ h4 {
   }
   .mobile-yes-display {
     width: 100% !important;
+    margin-left: 0 !important;
   }
   .mobile-no-display {
     display: none;
@@ -290,17 +300,22 @@ h4 {
   /* Navbar */
   .navbar + .docs-section {
     border-top-width: 0; }
-  .navbar,
-  .navbar-spacer {
+  .navbar{
     display: block;
     width: 100%;
     height: 6.5rem;
     background: #fff;
     z-index: 99;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee; }
-  .navbar-spacer {
-    display: none; }
+    /* border-top: 1px solid #eee; */
+    border: 1px solid #eee; }
+    .navbar-spacer {
+      display: block;
+      width: 100%;
+      height: 2.5rem;
+      background: #fff;
+      z-index: 99;
+      /* border-top: 1px solid #eee; */
+      border-bottom: 1px solid #eee; }
   .navbar > .container {
     width: 100%; }
   .navbar-list {

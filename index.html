@@ -2,10 +2,35 @@
 layout: default
 title: Home
 ---
-
+<div class="docs-section" id="news">
+  <h5>Updates</h5>
+  <div class="timeline">
+    {% for year in site.data.news.news %}
+    <ul>
+      {% for news in year[1] %}
+      <li>
+        <div class="event-container">
+          <span class="date" style="color: #76236C;">[{{ news[0] }}]</span>
+          <span class="event">{{ news[1] }}</span>
+          
+        </div>
+      </li>
+      {% endfor %}
+      <!-- <span class="year">{{ year[0] }}</span>
+      <span class="bar"></span> -->
+    </ul>
+    {% endfor %}
+  </div>
+</div>
 <!-- ========== PUBLICATIONS ========== -->
+
+
+    <div class="docs-section" id="featured">
+      <h5>Featured</h5>
+      {% include featured.html %}
+    </div>
 <div class="docs-section" id="publications">
-  <h4>Publications</h4>
+  <h5>Publications</h5>
 
   <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
   <b><sup class="dagger-bold">‡</sup> indicates equal contribution.</b>
@@ -33,7 +58,7 @@ title: Home
 </div>
 
 <div class="docs-section" id="experiences">
-  <h4>Experiences</h4>
+  <h5>Experiences</h5>
 
   <table width="100%" align="center" border="0" cellpadding="20">
     {% for experience in site.data.experiences.experiences %}
@@ -61,10 +86,9 @@ title: Home
 </div> -->
 
 <!-- ========== RESUME ========== -->
-<div class="docs-section" id="cv">
+<!-- <div class="docs-section" id="cv">
   <h4>Curriculum Vitae</h4>
 
   <p>Full curriculum vitae in <a href={{ "/assets/cv/cv_andrew_lee.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
-  <!-- <object class="pdf" data="/assets/cv/cv_andrew_lee.pdf" type='application/pdf'></object> -->
-</div>
+</div> -->
 

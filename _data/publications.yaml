@@ -10,7 +10,6 @@ papers:
         video: "https://www.youtube.com/watch?v=DwJzdaKM4N0"
         code: "https://github.com/soltanilara/av-aloha"
         code (VR): "https://github.com/soltanilara/av-aloha-unity"
-        data (coming soon): "/"
         arXiv: "https://arxiv.org/abs/2409.17435"
         bib: "/assets/publications/av-aloha/bib.txt"
     abbv: "avaloha"
