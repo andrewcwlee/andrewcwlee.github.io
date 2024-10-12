@@ -111,7 +111,7 @@
         <div>{{ site.data.main_info.title }}</div>
      
         <a href="{{ site.baseurl }}/">
-          <img style="width:100%;max-width:100%;object-fit: cover;" class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'>
+          <img style="width:100%;max-width:100%;object-fit: cover;" class="u-max-full-width mobile-partial-display" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'>
         </a>
         <div>🇺🇸 Andrew C. Lee</div>
         <div>🇰🇷 Choong-Won Lee ({{ site.data.main_info.name2 }})</div>
@@ -153,16 +153,16 @@
               </a>
           </div>
 
-            <div class="navbar-spacer mobile-no-display"></div>
+            <div class="navbar-spacer mobile-yes-display"></div>
 
-            <div class="announcements mobile-no-display">
+            <div class="announcements mobile-yes-display">
         
               {% for announcement in site.data.announcements.announcements %}
               <div style="display: inline-block;"><i style="margin-right: 5px; display: inline-block;" class="fa-solid fa-bullhorn"></i> {{ announcement }}</div>
               {% endfor %}
             </div>
 
-            <div class="navbar-spacer mobile-no-display"></div>
+            <div class="navbar-spacer mobile-yes-display"></div>
             
 
 
@@ -176,11 +176,10 @@
       
     <div class="nine columns mobile-yes-display mainbar">
   
-    <section class="header">
+    <section class="header no-margin-mobile">
         <div class="main-description">
           <div>
-           
-            <br>
+          
             {{ site.data.main_info.description }}
 
         </div>

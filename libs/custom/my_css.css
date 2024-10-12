@@ -63,6 +63,19 @@ h4 {
 .mainbar {
   margin-left: 300px;
 }
+.no-margin-mobile {
+  padding-top: 1em !important;
+}
+
+.navbar-spacer {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  background: #fff;
+  z-index: 99;
+  /* border-top: 1px solid #eee; */
+  border-bottom: 1px solid #eee; }
+
 .project-container {
   margin-bottom: 30px;
 }
@@ -299,6 +312,44 @@ h4 {
   .mobile-no-display {
     display: none;
   }
+  .mobile-partial-display {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .mobile-partial-display {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 250px !important;
+  }
+  .no-margin-mobile {
+    margin: 0 !important;
+    padding-top: 0 !important;
+  }
+  .sidebar {
+    position: relative;
+    /* width: 140px !important; */
+  }
+
+  .main-description {
+    width: 100% !important;
+  }
+
+  .ex-image {
+    margin-top: 1em;
+  }
+  .two {
+    display: none;
+  }
+  .mobile-yes-display {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .mobile-no-display {
+    display: none;
+  }
 }
 
 /* Larger than phone */
@@ -308,26 +359,18 @@ h4 {
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media (min-width: 580px) {
   /* Navbar */
-  .navbar + .docs-section {
+  /* .navbar + .docs-section {
     border-top-width: 0; }
   .navbar{
     display: block;
     width: 100%;
     height: 6.5rem;
     background: #fff;
-    z-index: 99;
+    z-index: 99; */
     /* border-top: 1px solid #eee; */
-    border: 1px solid #eee; }
-    .navbar-spacer {
-      display: block;
-      width: 100%;
-      height: 2.5rem;
-      background: #fff;
-      z-index: 99;
-      /* border-top: 1px solid #eee; */
-      border-bottom: 1px solid #eee; }
+    /* border: 1px solid #eee; } */
   .navbar > .container {
     width: 100%; }
   .navbar-list {
