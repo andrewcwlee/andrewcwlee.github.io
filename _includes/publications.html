@@ -28,7 +28,7 @@
         </script>
       </td>
       <td style="padding:20px;width:90%;vertical-align:middle">
-        <b><span class="papertitle">{{ paper.title }}</span></b>
+        <b><span id="{{ paper.abbrev }}" class="papertitle">{{ paper.title }}</span></b>
         <p>
           {% for author in paper.authors %}
           {% assign last_author = forloop.last %}
