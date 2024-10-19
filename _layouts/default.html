@@ -1,246 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+layout: compress
+---
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Andrew Lee>
-  <meta name="author" content="Andrew Lee">
-  <meta property="og:title" content="Andrew Lee" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://andrewcwlee.github.io" />
-  <meta property="og:site_name" content="Andrew Lee" />
-  <link rel="canonical" href="http://andrewcwlee.github.io" />
+{% include base_path %}
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'> -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Kaushan+Script&Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <body>
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
 
-  <!-- JQuery
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
+    {{ content }}
 
-  <!-- Font-Awesome
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://kit.fontawesome.com/fa71d0ad07.js" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href={{ "/libs/external/font-awesome-6.6.0/css/font-awesome.min.css" | prepend: site.baseurl }}> -->
-
-  <!-- Academicons
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link rel="stylesheet" href={{ "/libs/external/academicons-1.8.6/css/academicons.min.css" | prepend: site.baseurl }}> -->
-
-  <!-- Skeleton tabs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/skeleton_tabs/skeleton-tabs.css" | prepend: site.baseurl }}>
-  <script src={{ "/libs/external/skeleton_tabs/skeleton-tabs.js" | prepend: site.baseurl }}></script>
-
-  <!-- Timeline
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/timeline.css" | prepend: site.baseurl }}>
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<link rel="stylesheet" href={{ "/libs/external/github-prettify-theme.css" | prepend: site.baseurl }}>-->
-  <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
-  <link rel="shortcut icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
-
-
-  <!-- <script type="text/javascript">
-    var sc_project=13038607; 
-    var sc_invisible=1; 
-    var sc_security="3051b5a8"; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    Statcounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/13038607/0/3051b5a8/1/"
-    alt="Web Analytics Made Easy - Statcounter"
-    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript> -->
-
-
-</head>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P79VPDLRR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-  
-      gtag('config', 'G-3P79VPDLRR');
     </script>
 
-<body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- 
-  <div class="container">
-    <!-- <nav class="navbar" style="padding-left:1em; background-color: #fafafa;">
-      <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href={{ "#featured" | prepend: site.baseurl }}>Featured</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "#news" | prepend: site.baseurl }}>News</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "#publications" | prepend: site.baseurl }}>Publications</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "#experiences" | prepend: site.baseurl }}>Experiences</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "#cv" | prepend: site.baseurl }}>Curriculum Vitae</a></li>
-        </ul>
-      </div>
-    </nav> -->
-    <div class="row">
-      <div class="header three columns profile mobile-yes-display sidebar">
-        <div style="font-size: 2.7em; font-family: 'Kaushan Script', cursive;">{{ site.data.main_info.name }}</div>
-        <div>{{ site.data.main_info.title }}</div>
-     
-        <a href="{{ site.baseurl }}/">
-          <img style="width:100%;max-width:100%;object-fit: cover;" class="u-max-full-width mobile-partial-display" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'>
-        </a>
-        <div>🇺🇸 Andrew C. Lee</div>
-        <div>🇰🇷 Choong-Won Lee ({{ site.data.main_info.name2 }})</div>
-        
-        <br>
-          <div>
-            <a href="{{ site.data.main_info.email_link }}">
-              <i class="fa-fw fa-solid fa-envelope"></i> {{ site.data.main_info.email }}</a>
-          </div>
-            <div>
-              <a style="display: inline-block;" target="_blank" href="{{ site.data.main_info.twitter }}">
-                <!-- <i style="margin: 0px 3px; " class="fa fa-twitter" aria-hidden="true"></i> -->
-                <i class="fa-fw fa-brands fa-square-x-twitter"></i> X (Twitter)
-              </a>
-
-            </div>
-
-
-              <div>
-                <a style="display: inline-block;" target="_blank" href="{{ site.data.main_info.linkedin }}">
-                  <!-- <i style="margin: 0px 3px; " class="fa fa-linkedin-square" aria-hidden="true"></i> -->
-                  <i class="fa-fw fa-brands fa-linkedin"></i> Linkedin
-                </a>
-              </div>
-              <div>
-                <a style="display: inline-block;" target="_blank" href="{{ site.data.main_info.github }}">
-                  <!-- <i style="margin: 0px 3px; " class="fa fa-github" aria-hidden="true"></i> -->
-                  <i class="fa-fw fa-brands fa-square-github"></i> GitHub
-                </a>
-              </div>
-              <div>
-                <a style="display: inline-block;" target="_blank" href="{{ site.data.main_info.google_scholar }}">
-                  <i class="fa-fw fa-brands fa-google-scholar"></i> Google Scholar
-                </a>
-            </div>
-            <div>
-              <a style="display: inline-block;" target="_blank" href={{ "/assets/cv/cv_andrew_lee.pdf" | prepend: site.baseurl }} >
-                <i class="fa-fw fa-solid fa-file"></i> Curriculum Vitae (CV)
-              </a>
-          </div>
-
-            <div class="navbar-spacer mobile-yes-display"></div>
-
-            <div class="announcements mobile-yes-display">
-        
-              {% for announcement in site.data.announcements.announcements %}
-              <div style="display: inline-block;"><i style="margin-right: 5px; display: inline-block;" class="fa-solid fa-bullhorn"></i> {{ announcement }}</div>
-              {% endfor %}
-            </div>
-
-            <div class="navbar-spacer mobile-yes-display"></div>
-            
-
-
-            <!-- <div class="navbar-spacer"></div>
-            <div class="mobile-no-display" style="margin-left: 0;">
-              <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We introduce AV-ALOHA, a bimanual robot system featuring a 7-DoF arm solely dedicated to Active Vision. By using a VR headset, operators can intuitively control the camera, dynamically adjusting its viewpoint to perfectly capture complex manipulation tasks.<br>(1/4)<a href="https://twitter.com/hashtag/Robotics?src=hash&amp;ref_src=twsrc%5Etfw">#Robotics</a> <a href="https://twitter.com/hashtag/AI?src=hash&amp;ref_src=twsrc%5Etfw">#AI</a> <a href="https://t.co/UAyrCtHDAo">pic.twitter.com/UAyrCtHDAo</a></p>&mdash; Andrew Lee (@andrewleecw) <a href="https://twitter.com/andrewleecw/status/1840912489367871837?ref_src=twsrc%5Etfw">October 1, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div> -->
-      </div>
-      
-
-      
-    <div class="nine columns mobile-yes-display mainbar">
-  
-    <section class="header no-margin-mobile">
-        <div class="main-description">
-          <div>
-          
-            {{ site.data.main_info.description }}
-
-        </div>
-        
-      </div>
-      
-    </section>
-
-  
-    
-    
-
-
-
-    
-
-
-
-    {{ content}}
-
-
-  </div>
-  
-</div>
-</div>
-
-</div>
-<div class="footer">
-  <div style="margin-bottom: 1em; background-color: #fafafa; font-size: 14px; padding: 0.5em">
-    <div>This website is based on templates from <a href="https://github.com/msaveski/www_personal" target="_blank">Martin Saveski</a> and <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.</div>
-  </div>
-  <div class="row">
-    <div class="four columns">
-      {{ site.data.main_info.name }}
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
     </div>
-    <div class="four columns">
-      {{ site.data.main_info.email }}
-    </div>
-    <div class="four columns">
-      <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-        <i class="fa-brands fa-square-x-twitter"></i>
-      </span>
-      <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-        <i class="fa-brands fa-linkedin"></i> 
-      </span>
-      <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-        <i class="fa-brands fa-square-github"></i>
-      </span>
-      <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-        <i class="fa-brands fa-google-scholar"></i>
-      </span>
-    </div>
-  </div>
-</div>
-</div>
 
+    {% include scripts.html %}
 
-  –
-
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+  </body>
 </html>

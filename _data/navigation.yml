@@ -1,0 +1,13 @@
+# main links links
+main:
+  # - title: "Updates"
+  #   url: /updates/
+    
+  # - title: "Blog"
+  #   url: /blog/
+
+  - title: "Photos"
+    url: /photos/
+
+  - title: "CV"
+    url: /cv/
