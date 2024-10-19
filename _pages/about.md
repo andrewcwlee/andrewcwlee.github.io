@@ -44,7 +44,9 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 	<div class="right">
 		<div class="title">Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation</div>
 		<div class="sub-title">Ian Chuang<sup>‡</sup>, <span class="author-me">Andrew Lee<sup>‡</sup></span>, Dechen Gao, Iman Soltani<br>
-		<i><b>Workshop on Whole-body Control and Bimanual Manipulation (WCBM) @ CoRL 2024<br>
+		<i>
+		<b>
+		<!-- Workshop on Whole-body Control and Bimanual Manipulation (WCBM) @ CoRL 2024<br> -->
 		arXiv preprint 2024</b></i><br>
 			<a target="_blank" class="tab_paper" href="https://soltanilara.github.io/av-aloha/">project page</a>
 			<a target="_blank" class="tab_paper" href="https://arxiv.org/abs/2409.17435">arXiv</a>
