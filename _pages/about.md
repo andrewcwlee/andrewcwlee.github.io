@@ -25,7 +25,7 @@ redirect_from:
 <div class="recent_updates" id="publications">Publications</div>
 <span style="font-size:14px;margin-left: 25px;display: block;">
 Most recent publications on <a style="text-decoration:none!important;" href="https://scholar.google.com/citations?user=cfIJXfoAAAAJ&hl=en" target="_blank">Google Scholar</a>.<br>
-<b>‡</b>indicates equal contribution.</span>
+<b>‡</b> indicates equal contribution.</span>
 
 <div class="research-block">
 	<div class="left">
@@ -38,12 +38,13 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 		<div class="sub-title">Ian Chuang<sup>‡</sup>, <span class="author-me">Andrew Lee<sup>‡</sup></span>, Dechen Gao, Iman Soltani<br>
 		<i>
 		<b>
-		<!-- Workshop on Whole-body Control and Bimanual Manipulation (WCBM) @ CoRL 2024<br> -->
+		Workshop on Whole-body Control and Bimanual Manipulation @ CoRL 2024<br>
 		arXiv preprint 2024</b></i><br>
-			<a target="_blank" class="tab_paper" href="https://soltanilara.github.io/av-aloha/">project page</a>
-			<a target="_blank" class="tab_paper" href="https://arxiv.org/abs/2409.17435">arXiv</a>
-			<a target="_blank" class="tab_paper" href="https://github.com/soltanilara/av-aloha">code</a>
-			<a target="_blank" class="tab_paper" href="https://github.com/soltanilara/av-aloha-unity">code (VR)</a>
+			<a target="_blank" href="https://soltanilara.github.io/av-aloha/"><button class="btn pub-btn"><i class="fas fa-globe"></i> project page</button></a>
+			<a target="_blank" href="https://arxiv.org/abs/2409.17435"><button class="btn pub-btn"><i class="ai ai-arxiv"></i> arXiv</button></a>
+			<a target="_blank" href="https://github.com/soltanilara/av-aloha"><button class="btn pub-btn"><i class="fab fa-github"></i> code</button></a>
+			<a target="_blank" href="https://github.com/soltanilara/av-aloha-unity"><button class="btn pub-btn"><i class="fab fa-github"></i> code (VR)</button></a>
+			<a target="_blank" href="https://www.youtube.com/watch?v=DwJzdaKM4N0"><button class="btn pub-btn"><i class="fas fa-video"></i> video</button></a>
 		</div>
 		<span class="research-text">
 		<b>tl;dr</b> We introduce AV-ALOHA, a bimanual robot system with 7-DoF active vision that is an extension of ALOHA 2. This system offers an immersive teleoperation experience using VR and serves as a platform to evaluate active vision in imitation learning and manipulation.
@@ -61,9 +62,10 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 		<div class="title">InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation</div>
 		<div class="sub-title"><span class="author-me">Andrew Lee</span>, Ian Chuang, Ling-Yuan Chen, Iman Soltani<br>
 			<i><b>CoRL 2024</b></i><br>
-			<a target="_blank" class="tab_paper" href="https://soltanilara.github.io/interact/">project page</a>
-			<a target="_blank" class="tab_paper" href="https://www.arxiv.org/abs/2409.07914">arXiv</a>
-			<a target="_blank" class="tab_paper" href="https://openreview.net/forum?id=lKGRPJFPCM">OpenReview</a>
+			<a target="_blank" href="https://soltanilara.github.io/interact/"><button class="btn pub-btn"><i class="fas fa-globe"></i> project page</button></a>
+			<a target="_blank" href="https://www.arxiv.org/abs/2409.07914"><button class="btn pub-btn"><i class="ai ai-arxiv"></i> arXiv</button></a>
+			<a target="_blank" href="https://openreview.net/forum?id=lKGRPJFPCM"><button class="btn pub-btn">OpenReview</button></a>
+			<button class="btn btn--disabled pub-btn"><i class="fab fa-github"></i> code (coming soon)</button>
 		</div>
 		<span class="research-text">
 		<b>tl;dr</b> InterACT builds on the concept of hierarchical attention mechanisms, capturing and extracting the inter-dependencies between dual-arm joint positions and visual inputs. By doing so, InterACT guides the two arms to perform bimanual tasks with precision—independently yet in seamless coordination.
@@ -74,13 +76,13 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 <div class="recent_updates" id="misc">Experiences</div>
 <div class="research-block">
 	<div class="left">
-		<span class="research-img">
-			<img src="/images/lara.png">
+		<span class="ex-img">
+			<img src="/images/logowhite.png">
 		</span>
 	</div>
 	<div class="right">
 		<div class="ex-title">Graduate Student Researcher at <a href="https://soltanilab.engineering.ucdavis.edu" target="_blank">LARA</a></div>
-		<div class="sub-title">UC Davis, CA<br><i>MAY 2023 - Present</i></div>
+		<div class="sub-title">UC Davis<br><i>2023.05 - Present</i></div>
 	</div>
 </div>
 
