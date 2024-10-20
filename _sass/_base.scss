@@ -1,12 +1,18 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
+html {
+  /* sticky footer fix */
+  position: relative;
+  min-height: 100%;
+}
 
 body {
   margin: 0;
-  padding: 0;
-  color: #212325;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  padding: $masthead-height 0 0;
+  padding-bottom: 9em;
+  color: $text-color;
+  font-family: $global-font-family;
   line-height: 1.5;
 
   &.overflow--hidden {
@@ -18,7 +24,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: $header-font-family;
   font-weight: bold;
 }
 
@@ -106,10 +112,6 @@ blockquote {
 /* links */
 
 a {
-
-  text-decoration: underline;
-  color: $text-color;
-
   &:focus {
     @extend %tab-focus;
   }

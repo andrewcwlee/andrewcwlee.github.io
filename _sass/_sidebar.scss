@@ -13,6 +13,13 @@
   @include clearfix();
   margin-bottom: 1em;
 
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    height: 100vh;
+    overflow-y: auto;               // Add scrollbar if the sidebar is too long
+    position: fixed;
+    padding-top: $masthead-height;
+  }
+
   @include breakpoint($large) {
     @include span(2 of 12);
     opacity: 1;
@@ -24,8 +31,8 @@
     }
   }
 
-
   @include breakpoint($x-large) {
+    max-width: $sidebar-link-max-width;
     padding-right: 0;
   }
 
@@ -39,7 +46,7 @@
   }
 
   p, li {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
   }
@@ -73,7 +80,8 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  height: 36px;
+  // set width only, for non-square avatars
+  // height: 36px;
 
   @include breakpoint($large) {
     display: block;
@@ -83,10 +91,11 @@
 
   img {
     max-width: 175px;
-    border-radius: 100%;
+    border-radius: 50%;
 
     @include breakpoint($large) {
       padding: 5px;
+      border: 1px solid $border-color;
     }
   }
 }
@@ -113,16 +122,26 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: 400;
-  }
 }
 .sidebar .author__name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: $sans-serif;
   font-size: $type-size-5;
+}
+
+.sidebar .author__desktop {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.author__pronouns {
+  margin: 0;
+
+  @include breakpoint($large) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .author__bio {
@@ -138,7 +157,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: $sans-serif;
   z-index: 10;
   position: relative;
   cursor: pointer;
@@ -226,16 +245,16 @@
 
   a {
     display: block;
-    // margin-bottom: 5px;
-    // padding-right: 5px;
-    // padding-top: 2px;
-    // padding-bottom: 2px;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
 
     &:hover {
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 }

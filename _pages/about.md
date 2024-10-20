@@ -1,23 +1,15 @@
 ---
 permalink: /
-#layout: archive
-excerpt: "About me"
+title: ""
 author_profile: true
-redirect_from:
+redirect_from: 
   - /about/
   - /about.html
 ---
 
-<div hidden="hidden">
-</div>
-
 <span class="small_font">
   I am a Ph.D. student in Computer Science at the <a href="https://ucdavis.edu/" target="_blank">University of California Davis</a>, where I am part of the <a href="https://soltanilab.engineering.ucdavis.edu" target="_blank">Laboratory for AI, Robotics and Automation (LARA)</a>, under the guidance of Prof. <a href="https://faculty.engineering.ucdavis.edu/soltani/\" target="_blank">Iman Soltani</a>. Before starting my Ph.D., I was a Master’s student at the same lab, and I received my B.S. in Mechanical Engineering from <a href="https://www.hanyang.ac.kr/web/eng/home" target="_blank">Hanyang University</a> in Seoul, South Korea. <br><br>
   My research focuses on developing robotic systems capable of <b>mimicking "real" human behavior and dexterity</b> in complex and unstructured environments. In that regard, my recent works are aimed at bimanual coordination and human-like perception. 
-</span>
-
-<span class="small_font">
-	Aside from research, I have a passion for photography, especially <a href="https://en.wikipedia.org/wiki/Street_photography" target="_blank">street photography</a>. It’s my way of reconnecting with the human side of things in this <b>🌪️ whirlwind 🌪️ of technology</b>—capturing moments that no algorithm could ever predict.
 </span>
 
 <div>
@@ -30,9 +22,9 @@ redirect_from:
 </div>
 
 
-<div class="recent_updates">Publications</div>
+<div class="recent_updates" id="publications">Publications</div>
 <span style="font-size:14px;margin-left: 25px;display: block;">
-Most recent publications on <a style="text-decoration:none!important;" href="https://scholar.google.com/citations?user={{ author.googlescholar }}" target="_blank">Google Scholar</a>.<br>
+Most recent publications on <a style="text-decoration:none!important;" href="https://scholar.google.com/citations?user=cfIJXfoAAAAJ&hl=en" target="_blank">Google Scholar</a>.<br>
 <b>‡</b>indicates equal contribution.</span>
 
 <div class="research-block">
@@ -78,3 +70,21 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 		</span>
 	</div>
 </div>
+
+<div class="recent_updates" id="misc">Experiences</div>
+<div class="research-block">
+	<div class="left">
+		<span class="research-img">
+			<img src="/images/lara.png">
+		</span>
+	</div>
+	<div class="right">
+		<div class="ex-title">Graduate Student Researcher at <a href="https://soltanilab.engineering.ucdavis.edu" target="_blank">LARA</a></div>
+		<div class="sub-title">UC Davis, CA<br><i>MAY 2023 - Present</i></div>
+	</div>
+</div>
+
+<div class="recent_updates" id="misc">Misc</div>
+<span class="small_font">
+	Aside from research, I have a passion for photography, especially <a href="https://en.wikipedia.org/wiki/Street_photography" target="_blank">street photography</a>. It’s my way of reconnecting with the human side of things in this <b>🌪️ whirlwind 🌪️ of technology</b>—capturing moments that no algorithm could ever predict.
+</span>
