@@ -38,7 +38,6 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 		<div class="sub-title">Ian Chuang<sup>‡</sup>, <span class="author-me">Andrew Lee<sup>‡</sup></span>, Dechen Gao, Iman Soltani<br>
 		<i>
 		<b>
-		Workshop on Whole-body Control and Bimanual Manipulation @ CoRL 2024<br>
 		arXiv preprint 2024</b></i><br>
 			<a target="_blank" href="https://soltanilara.github.io/av-aloha/"><button class="btn pub-btn"><i class="fas fa-globe"></i> project page</button></a>
 			<a target="_blank" href="https://arxiv.org/abs/2409.17435"><button class="btn pub-btn"><i class="ai ai-arxiv"></i> arXiv</button></a>
@@ -65,7 +64,7 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 			<a target="_blank" href="https://soltanilara.github.io/interact/"><button class="btn pub-btn"><i class="fas fa-globe"></i> project page</button></a>
 			<a target="_blank" href="https://www.arxiv.org/abs/2409.07914"><button class="btn pub-btn"><i class="ai ai-arxiv"></i> arXiv</button></a>
 			<a target="_blank" href="https://openreview.net/forum?id=lKGRPJFPCM"><button class="btn pub-btn">OpenReview</button></a>
-			<button class="btn btn--disabled pub-btn"><i class="fab fa-github"></i> code (coming soon)</button>
+			<button class="btn btn--disabled pub-btn"><i class="fab fa-github"></i> code</button>
 		</div>
 		<span class="research-text">
 		<b>tl;dr</b> InterACT builds on the concept of hierarchical attention mechanisms, capturing and extracting the inter-dependencies between dual-arm joint positions and visual inputs. By doing so, InterACT guides the two arms to perform bimanual tasks with precision—independently yet in seamless coordination.
@@ -74,6 +73,7 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 </div>
 
 <div class="recent_updates" id="misc">Experiences</div>
+
 <div class="research-block">
 	<div class="left">
 		<span class="ex-img">
