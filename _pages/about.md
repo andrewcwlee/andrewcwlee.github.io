@@ -9,7 +9,9 @@ redirect_from:
 
 <span class="small_font">
   I am a Ph.D. student in Computer Science at the <a href="https://ucdavis.edu/" target="_blank">University of California Davis</a>, where I am part of the <a href="https://soltanilab.engineering.ucdavis.edu" target="_blank">Laboratory for AI, Robotics and Automation (LARA)</a>, under the guidance of Prof. <a href="https://faculty.engineering.ucdavis.edu/soltani/\" target="_blank">Iman Soltani</a>. Before starting my Ph.D., I was a Master’s student at the same lab, and I received my B.S. in Mechanical Engineering from <a href="https://www.hanyang.ac.kr/web/eng/home" target="_blank">Hanyang University</a> in Seoul, South Korea. <br><br>
-  My research focuses on developing robotic systems capable of <b>mimicking "real" human behavior and dexterity</b> in complex and unstructured environments. In that regard, my recent works are aimed at bimanual coordination and human-like perception. 
+  My research focuses on developing robotic systems capable of <b>mimicking "real" human behavior and dexterity</b> in complex and unstructured environments. In that regard, my recent works are aimed at bimanual coordination and human-like perception.
+  <br><br>
+  <i>I am actively looking for <b>internship opportunities for 2025!</b> Please reach out if your team has any open positions!</i> 
 </span>
 
 <div>
@@ -65,6 +67,8 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 			<a target="_blank" href="https://www.arxiv.org/abs/2409.07914"><button class="btn pub-btn"><i class="ai ai-arxiv"></i> arXiv</button></a>
 			<a target="_blank" href="https://openreview.net/forum?id=lKGRPJFPCM"><button class="btn pub-btn">OpenReview</button></a>
 			<button class="btn btn--disabled pub-btn"><i class="fab fa-github"></i> code</button>
+			<button class="btn btn--disabled pub-btn"><i class="fas fa-video"></i> spotlight video</button>
+			<button class="btn btn--disabled pub-btn"><i class="fas fa-scroll"></i> poster</button>
 		</div>
 		<span class="research-text">
 		<b>tl;dr</b> InterACT builds on the concept of hierarchical attention mechanisms, capturing and extracting the inter-dependencies between dual-arm joint positions and visual inputs. By doing so, InterACT guides the two arms to perform bimanual tasks with precision—independently yet in seamless coordination.
