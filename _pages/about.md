@@ -17,7 +17,8 @@ redirect_from:
 <div>
 <div class="recent_updates">Updates</div>
 <ul style="margin-top:-3px; background-color: #fafafa; padding-top: 20px; padding-bottom: 20px" class="updates">
-	<li><span class="updates-month">OCT'24</span> <span class="updates-content"> We released the <a target='_blank' href='https://github.com/soltanilara/av-aloha'>code</a> and <a target='_blank' href='https://github.com/soltanilara/av-aloha-unity'>code (VR)</a> for AV-ALOHA!</span></li>
+	<li><span class="updates-month">OCT'24</span> <span class="updates-content">"Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation" got accepted at <b>Workshop on Whole-body Control and Bimanual Manipulation at CoRL 2024</b>!</span></li>
+	<li><span class="updates-month">OCT'24</span> <span class="updates-content">We released the <a target='_blank' href='https://github.com/soltanilara/av-aloha'>code</a> and <a target='_blank' href='https://github.com/soltanilara/av-aloha-unity'>code (VR)</a> for AV-ALOHA!</span></li>
 	<li><span class="updates-month">SEP'24</span> <span class="updates-content">"InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation" got accepted at <b>CoRL 2024</b>!</span></li>
 	<li><span class="updates-month">MAY'24</span> <span class="updates-content">I received the Summer Ph.D. Fellowship from UC Davis Computer Science Graduate Group!</span></li>
 </ul>
@@ -40,7 +41,8 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 		<div class="sub-title">Ian Chuang<sup>‡</sup>, <span class="author-me">Andrew Lee<sup>‡</sup></span>, Dechen Gao, Iman Soltani<br>
 		<i>
 		<b>
-		arXiv preprint 2024</b></i><br>
+		Workshop on Whole-body Control and Bimanual Manipulation @ CoRL 2024</b><br>
+		preprint 2024</i><br>
 			<a target="_blank" href="https://soltanilara.github.io/av-aloha/"><button class="btn pub-btn"><i class="fas fa-globe"></i> project page</button></a>
 			<a target="_blank" href="https://arxiv.org/abs/2409.17435"><button class="btn pub-btn"><i class="ai ai-arxiv"></i> arXiv</button></a>
 			<a target="_blank" href="https://github.com/soltanilara/av-aloha"><button class="btn pub-btn"><i class="fab fa-github"></i> code</button></a>
@@ -65,7 +67,6 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 			<i><b>CoRL 2024</b></i><br>
 			<a target="_blank" href="https://soltanilara.github.io/interact/"><button class="btn pub-btn"><i class="fas fa-globe"></i> project page</button></a>
 			<a target="_blank" href="https://www.arxiv.org/abs/2409.07914"><button class="btn pub-btn"><i class="ai ai-arxiv"></i> arXiv</button></a>
-			<a target="_blank" href="https://openreview.net/forum?id=lKGRPJFPCM"><button class="btn pub-btn">OpenReview</button></a>
 			<button class="btn btn--disabled pub-btn"><i class="fab fa-github"></i> code</button>
 			<button class="btn btn--disabled pub-btn"><i class="fas fa-video"></i> spotlight video</button>
 			<button class="btn btn--disabled pub-btn"><i class="fas fa-scroll"></i> poster</button>
