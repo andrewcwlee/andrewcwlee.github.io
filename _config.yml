@@ -214,10 +214,7 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
+  gallery:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -266,7 +263,7 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: portfolio
+      type: gallery
     values:
       layout: single
       author_profile: true
