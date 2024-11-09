@@ -48,7 +48,7 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 			<a target="_blank" href="https://github.com/soltanilara/av-aloha"><button class="btn pub-btn"><i class="fab fa-github"></i> code</button></a>
 			<a target="_blank" href="https://github.com/soltanilara/av-aloha-unity"><button class="btn pub-btn"><i class="fab fa-github"></i> code (VR)</button></a>
 			<a target="_blank" href="https://www.youtube.com/watch?v=DwJzdaKM4N0"><button class="btn pub-btn"><i class="fas fa-video"></i> video</button></a>
-			<button class="btn btn--disabled pub-btn"><i class="fas fa-scroll"></i> poster (workshop)</button>
+			<a target="_blank" href="/files/active-vision-workshop-poster.pdf"><button class="btn pub-btn"><i class="fas fa-scroll"></i> poster (workshop)</button></a>
 		</div>
 		<span class="research-text">
 		<b>tl;dr</b> We introduce AV-ALOHA, a bimanual robot system with 7-DoF active vision that is an extension of ALOHA 2. This system offers an immersive teleoperation experience using VR and serves as a platform to evaluate active vision in imitation learning and manipulation.
@@ -68,9 +68,7 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 			<i><b>Conference on Robot Learning (CoRL) 2024</b></i><br>
 			<a target="_blank" href="https://soltanilara.github.io/interact/"><button class="btn pub-btn"><i class="fas fa-globe"></i> project page</button></a>
 			<a target="_blank" href="https://www.arxiv.org/abs/2409.07914"><button class="btn pub-btn"><i class="ai ai-arxiv"></i> arXiv</button></a>
-			<button class="btn btn--disabled pub-btn"><i class="fab fa-github"></i> code</button>
-			<button class="btn btn--disabled pub-btn"><i class="fas fa-video"></i> spotlight video</button>
-			<button class="btn btn--disabled pub-btn"><i class="fas fa-scroll"></i> poster</button>
+			<a target="_blank" href="/files/interact-poster.pdf"><button class="btn pub-btn"><i class="fas fa-scroll"></i> poster</button></a>
 		</div>
 		<span class="research-text">
 		<b>tl;dr</b> InterACT builds on the concept of hierarchical attention mechanisms, capturing and extracting the inter-dependencies between dual-arm joint positions and visual inputs. By doing so, InterACT guides the two arms to perform bimanual tasks with precision—independently yet in seamless coordination.
@@ -91,8 +89,3 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 		<div class="sub-title">UC Davis<br><i>2023.05 - Present</i></div>
 	</div>
 </div>
-
-<div class="recent_updates" id="misc">Misc</div>
-<span class="small_font">
-	Aside from research, I have a passion for photography, especially <a href="https://en.wikipedia.org/wiki/Street_photography" target="_blank">street photography</a>. It’s my way of reconnecting with the human side of things in this <b>🌪️ whirlwind 🌪️ of technology</b>—capturing moments that no algorithm could ever predict.
-</span>
