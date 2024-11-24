@@ -9,20 +9,47 @@ redirect_from:
 
 <span class="small_font">
   I am a Ph.D. student in Computer Science at the <a href="https://ucdavis.edu/" target="_blank">University of California Davis</a>, where I am part of the <a href="https://soltanilab.engineering.ucdavis.edu" target="_blank">Laboratory for AI, Robotics and Automation (LARA)</a>, under the guidance of Dr. <a href="https://faculty.engineering.ucdavis.edu/soltani/\" target="_blank">Iman Soltani</a>. Before starting my Ph.D., I was a Master’s student at the same lab, and I received my B.S. in Mechanical Engineering from <a href="https://www.hanyang.ac.kr/web/eng/home" target="_blank">Hanyang University</a> in Seoul, South Korea. <br><br>
-  My research focuses on developing robotic systems capable of <b>mimicking "real" human behavior and dexterity</b> in complex and unstructured environments. In that regard, my recent works are aimed at bimanual coordination and human-like perception.
+  My research focuses on developing robotic systems capable of <b>mimicking "real" human behavior and dexterity</b> in everyday environments. In that regard, my recent works are aimed at bimanual manipulation and human-like perception.
   <br><br>
-  <i>I am actively looking for <b>internship opportunities for 2025!</b> Please reach out if your team has any open positions!</i> 
+  <i>I am actively looking for <b>internship opportunities for 2025!</b></i> 
 </span>
 
-<div>
-<div class="recent_updates">Updates</div>
-<ul style="margin-top:-3px; background-color: #fafafa; padding-top: 20px; padding-bottom: 20px" class="updates">
-	<li><span class="updates-month">OCT'24</span> <span class="updates-content">"Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation" got accepted at <b>Workshop on Whole-body Control and Bimanual Manipulation at CoRL 2024</b>!</span></li>
-	<li><span class="updates-month">OCT'24</span> <span class="updates-content">We released the <a target='_blank' href='https://github.com/soltanilara/av-aloha'>code</a> and <a target='_blank' href='https://github.com/soltanilara/av-aloha-unity'>code (VR)</a> for AV-ALOHA!</span></li>
-	<li><span class="updates-month">SEP'24</span> <span class="updates-content">"InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation" got accepted at <b>CoRL 2024</b>!</span></li>
-	<li><span class="updates-month">MAY'24</span> <span class="updates-content">I received the Summer Ph.D. Fellowship from UC Davis Computer Science Graduate Group!</span></li>
-</ul>
+
+<div class="row" style="text-align:center; display:flex; flex-wrap:wrap;">
+	<div class="row" style="display:flex; flex-wrap:wrap;">
+		<div class="col-6">
+			<div style="padding:10px; display:inline-block;">
+				<a href="https://www.hanyang.ac.kr/web/eng/home" target="_blank">
+				<div style="display: flex; justify-content: center; align-items: center; height:100px;">	
+					<img src="/images/hanyang-logo.png" style="max-width:100px;">	
+				</div>
+				</a>
+				<span style="font-size: .6rem; font-weight:300;">2013-2020 (BS)</span>
+			</div>
+		</div>
+		<div class="col-6">
+			<div style="padding:10px; display:inline-block;">
+				<a href="https://www.hanyang.ac.kr/web/eng/home" target="_blank">
+					<div style="display: flex; justify-content: center; align-items: center; height:100px;">
+						<img src="/images/ucdavis-logo.png" style="max-width:100px;">
+					</div>
+				</a>
+				<span style="font-size: .6rem; font-weight:300;">2021-Current (MS+PhD)</span>
+			</div>
+		</div>
+	</div>
 </div>
+  
+
+<div>
+<div class="recent_updates">Updates <span style="display:inline"><a id="toggle-link" href="javascript:void(0);" style="font-size:0.6em; text-align: center;">View All</a></span></div>
+<ul id="updates-list" style="margin-top:-3px; background-color: #fafafa; padding-top: 20px; padding-bottom: 20px;" class="updates">
+    <li><span class="updates-month">NOV'24</span> <span class="updates-content">I attended my first conference and presented two papers!</span></li>
+    <li><span class="updates-month">OCT'24</span> <span class="updates-content">"Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation" got accepted at <b>Workshop on Whole-body Control and Bimanual Manipulation at CoRL 2024</b>!</span></li>
+    <li><span class="updates-month">OCT'24</span> <span class="updates-content">We released the <a target='_blank' href='https://github.com/soltanilara/av-aloha'>code</a> and <a target='_blank' href='https://github.com/soltanilara/av-aloha-unity'>code (VR)</a> for AV-ALOHA!</span></li>
+    <li><span class="updates-month">SEP'24</span> <span class="updates-content">"InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation" got accepted at <b>CoRL 2024</b>!</span></li>
+    <li><span class="updates-month">MAY'24</span> <span class="updates-content">I received the Summer Ph.D. Fellowship from UC Davis Computer Science Graduate Group!</span></li>
+</ul>
 
 
 <div class="recent_updates" id="publications">Publications</div>
@@ -65,7 +92,7 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 	<div class="right">
 		<div class="title">InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation</div>
 		<div class="sub-title"><span class="author-me">Andrew Lee</span>, Ian Chuang, Ling-Yuan Chen, Iman Soltani<br>
-			<i><b>Conference on Robot Learning (CoRL) 2024</b></i><br>
+			<i><b>CoRL 2024</b></i><br>
 			<a target="_blank" href="https://soltanilara.github.io/interact/"><button class="btn pub-btn"><i class="fas fa-globe"></i> project page</button></a>
 			<a target="_blank" href="https://www.arxiv.org/abs/2409.07914"><button class="btn pub-btn"><i class="ai ai-arxiv"></i> arXiv</button></a>
 			<a target="_blank" href="/files/interact-poster.pdf"><button class="btn pub-btn"><i class="fas fa-scroll"></i> poster</button></a>
@@ -76,7 +103,7 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 	</div>
 </div>
 
-<div class="recent_updates" id="misc">Experiences</div>
+<!-- <div class="recent_updates" id="misc">Experiences</div>
 
 <div class="research-block">
 	<div class="left">
@@ -88,4 +115,28 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 		<div class="ex-title">Graduate Student Researcher at <a href="https://soltanilab.engineering.ucdavis.edu" target="_blank">LARA</a></div>
 		<div class="sub-title">UC Davis<br><i>2023.05 - Present</i></div>
 	</div>
-</div>
+</div> -->
+
+
+<script>
+
+	document.getElementById('toggle-link').addEventListener('click', function () {
+    const updatesList = document.getElementById('updates-list');
+    const link = this;
+
+    // Check if all items are visible
+    const isExpanded = updatesList.classList.toggle('show-all');
+
+    // Update the link text
+    link.textContent = isExpanded ? 'Show Less' : 'View All';
+
+    // Toggle visibility of all list items
+    const items = updatesList.querySelectorAll('li');
+    items.forEach((item, index) => {
+        if (index >= 5) {
+            item.style.display = isExpanded ? 'list-item' : 'none';
+        }
+    });
+});
+
+</script>
