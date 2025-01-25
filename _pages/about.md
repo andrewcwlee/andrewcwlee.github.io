@@ -42,12 +42,11 @@ redirect_from:
   
 
 <div>
-<div class="recent_updates">Updates <span style="display:inline"><a id="toggle-link" href="javascript:void(0);" style="font-size:0.6em; text-align: center;">View All</a></span></div>
+<div class="recent_updates">Updates<br><span style="display:inline"><a id="toggle-link" href="javascript:void(0);" style="font-size:0.6em; text-align: center;">View more</a></span></div>
 <ul id="updates-list" style="margin-top:-3px; background-color: #fafafa; padding-top: 20px; padding-bottom: 20px;" class="updates">
-    <li><span class="updates-month">NOV'24</span> <span class="updates-content">I attended my first conference and presented two papers!</span></li>
-    <li><span class="updates-month">OCT'24</span> <span class="updates-content">"Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation" got accepted at <b>Workshop on Whole-body Control and Bimanual Manipulation at CoRL 2024</b>!</span></li>
+    <li><span class="updates-month">OCT'24</span> <span class="updates-content">"Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation" got accepted at <b>Workshop on Whole-body Control and Bimanual Manipulation at CoRL 2024</b>🇩🇪!</span></li>
     <li><span class="updates-month">OCT'24</span> <span class="updates-content">We released the <a target='_blank' href='https://github.com/soltanilara/av-aloha'>code</a> and <a target='_blank' href='https://github.com/soltanilara/av-aloha-unity'>code (VR)</a> for AV-ALOHA!</span></li>
-    <li><span class="updates-month">SEP'24</span> <span class="updates-content">"InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation" got accepted at <b>CoRL 2024</b>!</span></li>
+    <li><span class="updates-month">SEP'24</span> <span class="updates-content">"InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation" got accepted at <b>CoRL 2024</b> 🇩🇪!</span></li>
     <li><span class="updates-month">MAY'24</span> <span class="updates-content">I received the Summer Ph.D. Fellowship from UC Davis Computer Science Graduate Group!</span></li>
 </ul>
 
@@ -117,26 +116,34 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 	</div>
 </div> -->
 
-
+<!-- initially show less -->
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const updatesList = document.getElementById('updates-list');
+        const items = updatesList.querySelectorAll('li');
+        const link = document.getElementById('toggle-link');
 
-	document.getElementById('toggle-link').addEventListener('click', function () {
-    const updatesList = document.getElementById('updates-list');
-    const link = this;
+        // Initially hide items after the first 3
+        items.forEach((item, index) => {
+            if (index >= 3) {
+                item.style.display = 'none';
+            }
+        });
 
-    // Check if all items are visible
-    const isExpanded = updatesList.classList.toggle('show-all');
+        // Add event listener for the toggle link
+        link.addEventListener('click', function () {
+            // Check if all items are visible
+            const isExpanded = updatesList.classList.toggle('show-all');
 
-    // Update the link text
-    link.textContent = isExpanded ? 'Show Less' : 'View All';
+            // Update the link text
+            link.textContent = isExpanded ? 'Show less' : 'View more';
 
-    // Toggle visibility of all list items
-    const items = updatesList.querySelectorAll('li');
-    items.forEach((item, index) => {
-        if (index >= 5) {
-            item.style.display = isExpanded ? 'list-item' : 'none';
-        }
+            // Toggle visibility of all list items
+            items.forEach((item, index) => {
+                if (index >= 3) {
+                    item.style.display = isExpanded ? 'list-item' : 'none';
+                }
+            });
+        });
     });
-});
-
 </script>
