@@ -41,9 +41,7 @@ redirect_from:
 	</div>
 </div>
   
-
-<div>
-<div class="recent_updates">Updates<br><span style="display:inline"><a id="toggle-link" href="javascript:void(0);" style="font-size:0.6em; text-align: center;">View more</a></span></div>
+<div class="recent_updates">Updates<br><span style="display:inline"><a id="toggle-link" style="font-size:0.6em; text-align: center;">View more</a></span></div>
 <ul id="updates-list" style="margin-top:-3px; background-color: #fafafa; padding-top: 20px; padding-bottom: 20px;" class="updates">
     <li><span class="updates-month">OCT'24</span> <span class="updates-content">"Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation" got accepted at <b>Workshop on Whole-body Control and Bimanual Manipulation at CoRL 2024</b>🇩🇪!</span></li>
     <li><span class="updates-month">OCT'24</span> <span class="updates-content">We released the <a target='_blank' href='https://github.com/soltanilara/av-aloha'>code</a> and <a target='_blank' href='https://github.com/soltanilara/av-aloha-unity'>code (VR)</a> for AV-ALOHA!</span></li>
