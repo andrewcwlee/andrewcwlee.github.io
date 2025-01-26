@@ -19,3 +19,35 @@ http://andrewcwlee.github.io -->
     alt="Web Analytics"
     referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     <!-- End of Statcounter Code -->
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const updatesList = document.getElementById('updates-list');
+        const items = updatesList.querySelectorAll('li');
+        const link = document.getElementById('toggle-link');
+
+        // Initially hide items after the first 3
+        items.forEach((item, index) => {
+            if (index >= 3) {
+                item.style.display = 'none';
+            }
+        });
+
+        // Add event listener for the toggle link
+        link.addEventListener('click', function () {
+            // Check if all items are visible
+            const isExpanded = updatesList.classList.toggle('show-all');
+
+            // Update the link text
+            link.textContent = isExpanded ? 'Show less' : 'View more';
+
+            // Toggle visibility of all list items
+            items.forEach((item, index) => {
+                if (index >= 3) {
+                    item.style.display = isExpanded ? 'list-item' : 'none';
+                }
+            });
+        });
+    });
+</script>

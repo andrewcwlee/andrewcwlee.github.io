@@ -7,36 +7,6 @@ redirect_from:
   - /about.html
 ---
 <!-- initially show less -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const updatesList = document.getElementById('updates-list');
-        const items = updatesList.querySelectorAll('li');
-        const link = document.getElementById('toggle-link');
-
-        // Initially hide items after the first 3
-        items.forEach((item, index) => {
-            if (index >= 3) {
-                item.style.display = 'none';
-            }
-        });
-
-        // Add event listener for the toggle link
-        link.addEventListener('click', function () {
-            // Check if all items are visible
-            const isExpanded = updatesList.classList.toggle('show-all');
-
-            // Update the link text
-            link.textContent = isExpanded ? 'Show less' : 'View more';
-
-            // Toggle visibility of all list items
-            items.forEach((item, index) => {
-                if (index >= 3) {
-                    item.style.display = isExpanded ? 'list-item' : 'none';
-                }
-            });
-        });
-    });
-</script>
 
 <span class="small_font">
   I am a Ph.D. student in Computer Science at the <a href="https://ucdavis.edu/" target="_blank">University of California Davis</a>, where I am part of the <a href="https://soltanilab.engineering.ucdavis.edu" target="_blank">Laboratory for AI, Robotics and Automation (LARA)</a>, under the guidance of Dr. <a href="https://faculty.engineering.ucdavis.edu/soltani/\" target="_blank">Iman Soltani</a>. Before starting my Ph.D., I was a Master’s student at the same lab, and I received my B.S. in Mechanical Engineering from <a href="https://www.hanyang.ac.kr/web/eng/home" target="_blank">Hanyang University</a> in Seoul, South Korea. <br><br>
