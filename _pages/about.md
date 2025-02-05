@@ -2,6 +2,7 @@
 permalink: /
 title: ""
 author_profile: true
+image: "profile.jpg"
 redirect_from: 
   - /about/
   - /about.html
@@ -41,14 +42,6 @@ redirect_from:
 	</div>
 </div>
   
-<div class="recent_updates">Updates<br><span style="display:inline"><a id="toggle-link" style="font-size:0.6em; text-align: center;">View more</a></span></div>
-<ul id="updates-list" style="margin-top:-3px; background-color: #fafafa; padding-top: 20px; padding-bottom: 20px;" class="updates">
-    <li><span class="updates-month">OCT'24</span> <span class="updates-content">"Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation" got accepted at <b>Workshop on Whole-body Control and Bimanual Manipulation at CoRL 2024</b>🇩🇪!</span></li>
-    <li><span class="updates-month">OCT'24</span> <span class="updates-content">We released the <a target='_blank' href='https://github.com/soltanilara/av-aloha'>code</a> and <a target='_blank' href='https://github.com/soltanilara/av-aloha-unity'>code (VR)</a> for AV-ALOHA!</span></li>
-    <li><span class="updates-month">SEP'24</span> <span class="updates-content">"InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation" got accepted at <b>CoRL 2024</b> 🇩🇪!</span></li>
-    <li><span class="updates-month">MAY'24</span> <span class="updates-content">I received the Summer Ph.D. Fellowship from UC Davis Computer Science Graduate Group!</span></li>
-</ul>
-
 
 <div class="recent_updates" id="publications">Publications</div>
 <span style="font-size:14px;margin-left: 25px;display: block;">
@@ -66,8 +59,8 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 		<div class="sub-title">Ian Chuang<sup>*</sup>, <span class="author-me">Andrew Lee<sup>*</sup></span>, Dechen Gao, Iman Soltani<br>
 		<i>
 		<b>
-		Workshop on Whole-body Control and Bimanual Manipulation @ CoRL 2024</b><br>
-		preprint 2024</i><br>
+		Workshop on Whole-body Control and Bimanual Manipulation @ CoRL 2024<br>
+		ICRA 2025</b></i><br>
 			<a target="_blank" href="https://soltanilara.github.io/av-aloha/"><button class="btn pub-btn"><i class="fas fa-globe"></i> project page</button></a>
 			<a target="_blank" href="https://arxiv.org/abs/2409.17435"><button class="btn pub-btn"><i class="ai ai-arxiv"></i> arXiv</button></a>
 			<a target="_blank" href="https://github.com/soltanilara/av-aloha"><button class="btn pub-btn"><i class="fab fa-github"></i> code</button></a>
@@ -116,3 +109,12 @@ Most recent publications on <a style="text-decoration:none!important;" href="htt
 </div> -->
 
 
+
+<div class="recent_updates">Updates</div>
+<ul id="updates-list" style="margin-top:-3px; background-color: #fafafa; padding-top: 20px; padding-bottom: 20px;" class="updates">
+	<li><span class="updates-month">JAN'25</span> <span class="updates-content">"<i>Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation</i>" got accepted at <b>ICRA 2025</b> 🇺🇸!</span></li>
+    <li><span class="updates-month">OCT'24</span> <span class="updates-content">"<i>Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation</i>" got accepted at <b>Workshop on Whole-body Control and Bimanual Manipulation at CoRL 2024</b> 🇩🇪!</span></li>
+    <li><span class="updates-month">OCT'24</span> <span class="updates-content">We released the <a target='_blank' href='https://github.com/soltanilara/av-aloha'>code</a> and <a target='_blank' href='https://github.com/soltanilara/av-aloha-unity'>code (VR)</a> for AV-ALOHA!</span></li>
+    <li><span class="updates-month">SEP'24</span> <span class="updates-content">"<i>InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation</i>" got accepted at <b>CoRL 2024</b> 🇩🇪!</span></li>
+    <li><span class="updates-month">MAY'24</span> <span class="updates-content">I received the Summer Ph.D. Fellowship from UC Davis Computer Science Graduate Group!</span></li>
+</ul>
