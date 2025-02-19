@@ -44,25 +44,33 @@ education:
 - name: University of California, Davis
   logo: /assets/images/badges/ucdavis-logo.png
   position: >- 
-    Ph.D. in Computer Science <br/>
+    Ph.D. in Computer Science
+  date: May. 2023 - Present
+  note: "Advisor: Iman Soltani"
+- name: University of California, Davis
+  logo: /assets/images/badges/ucdavis-logo.png
+  position: >- 
     M.S. in Computer Science
-  date: May. 2023 - Present <br/> Sep. 2021 - Apr. 2023 
+  date: Sep. 2021 - Apr. 2023 (transition to Ph.D.)
 - name: Hanyang University
   logo: /assets/images/badges/hanyang-logo.png
   position: B.S. in Mechanical Engineering
   date: Feb. 2020
+  note: "Thesis: Compact Motor-Driven Walk-Support Device for Reducing Muscle Load"
 
-experience:
-- name: Laboratory for AI, Robotics and Automation (LARA)
-  logo: /assets/images/badges/lara-logo.png
-  location: Davis, CA
-  position: Graduate Student Researcher
-  date: Jul. 2022 - Present
+# experience:
+# - name: Laboratory for AI, Robotics and Automation (LARA)
+#   logo: /assets/images/badges/lara-logo.png
+#   location: Davis, CA
+#   position: Graduate Student Researcher
+#   date: Jul. 2022 - Present
 
-# awards:
-# - name: Award Name 2
-#   date: 2024
-# - name: Award Name 1 
-#   date: 2021
-# - name: A quick brown fox jumps over the lazy dog and runs away award
-#   date: 2021
+awards:
+- name: Computer Science Graduate Group Summer Ph.D. Fellowship, UC Davis
+  date: 2024
+
+media:
+- name: "Eye, Robot: Researchers Give Machines a New Perspective with Active Vision"
+  note: "UC Davis College of Engineering News"
+  url: https://engineering.ucdavis.edu/news/eye-robot-researchers-give-machines-new-perspective-active-vision
+  date: Nov. 2024

@@ -9,7 +9,7 @@ pub:            "<b>Workshop on Whole-body Control and Bimanual Manipulation @ C
 pub_date:       
 
 abstract: >-
-  We introduce AV-ALOHA, a bimanual robot system with 7-DoF active vision that is an extension of ALOHA 2. This system offers an immersive teleoperation experience using VR and serves as a platform to evaluate active vision in imitation learning and manipulation.
+  We introduce AV-ALOHA, a new bimanual teleoperation robot system that extends the ALOHA 2 robot system with Active Vision. This system provides an immersive teleoperation experience, with bimanual first-person control, enabling the operator to dynamically explore and search the scene and simultaneously interact with the environment. We conduct imitation learning experiments and our results show significant improvements over fixed cameras in tasks with limited visibility.
 cover:          /assets/images/covers/avaloha-teaser.gif
 authors:
   - Ian Chuang*
