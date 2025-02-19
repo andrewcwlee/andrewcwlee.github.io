@@ -26,7 +26,7 @@ short_bio: >-
   Before starting my Ph.D., I was a Master’s student at the same lab, and I received my B.S. in Mechanical Engineering from Hanyang University in Seoul, South Korea.
   </p>
   <p>
-  As a researcher, I am passionate about <b>bridging the gap between robotics and human behavior</b>. Specifically, I am interested in (i) achieving <b>natural coordination between robot parts</b> (e.g., arms-arms, arms-body) and (ii) developing <b>human-like active perception</b> strategies for robots.
+  As a researcher, I am passionate about <b>bridging the gap between robotics and human behavior</b>. Specifically, I am interested in (i) achieving <b>natural coordination between robots</b> (e.g., bimanual coordination, between arms and body) and (ii) developing <b>human-like active perception</b> strategies for robots.
   </p>
   <p>
   Most recently, I have been exploring how Large Vision-Language Models (LVLMs) can be leveraged to guide robots in acquiring human-like bahaviors.
@@ -44,17 +44,17 @@ education:
 - name: University of California, Davis
   logo: /assets/images/badges/ucdavis-logo.png
   position: >- 
-    Ph.D. in Computer Science
+    <i>Ph.D. in Computer Science</i>
   date: May. 2023 - Present
   note: "Advisor: Iman Soltani"
 - name: University of California, Davis
   logo: /assets/images/badges/ucdavis-logo.png
   position: >- 
-    M.S. in Computer Science
+    <i>M.S. in Computer Science</i>
   date: Sep. 2021 - Apr. 2023 (transition to Ph.D.)
 - name: Hanyang University
   logo: /assets/images/badges/hanyang-logo.png
-  position: B.S. in Mechanical Engineering
+  position: <i>B.S. in Mechanical Engineering</i>
   date: Feb. 2020
   note: "Thesis: Compact Motor-Driven Walk-Support Device for Reducing Muscle Load"
 
