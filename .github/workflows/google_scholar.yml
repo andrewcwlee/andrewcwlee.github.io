@@ -12,6 +12,11 @@ jobs:
     - uses: actions/checkout@v2
       with:
         persist-credentials: true
+    - name: Set up PAT token for push
+      env:
+        PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+      run: |
+        git remote set-url origin https://$PAT_TOKEN@github.com/andrewcwlee/andrewcwlee.github.io.git
     - name: Install Reqs
       run: |
         sudo apt-get install python3-setuptools
