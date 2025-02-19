@@ -38,6 +38,7 @@ defaults:
 # to override the default setting.
 exclude:
   - showcase
+  - google_crawler
 #   - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/

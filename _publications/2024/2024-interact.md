@@ -20,4 +20,5 @@ links:
   project page: https://soltanilara.github.io/interact/
   arXiv: https://www.arxiv.org/abs/2409.07914
   poster: '/assets/files/interact-poster.pdf'
+pub_id: "cfIJXfoAAAAJ:u5HHmVD_uO8C"
 ---

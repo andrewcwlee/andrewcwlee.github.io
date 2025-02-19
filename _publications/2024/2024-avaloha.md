@@ -23,4 +23,5 @@ links:
   code (VR): https://github.com/soltanilara/av-aloha-unity
   video: https://www.youtube.com/watch?v=DwJzdaKM4N0
   poster (workshop): '/assets/files/active-vision-workshop-poster.pdf'
+pub_id: "cfIJXfoAAAAJ:d1gkVwhDpl0C"
 ---
