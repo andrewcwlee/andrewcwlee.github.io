@@ -9,7 +9,7 @@
             {%- endif -%}
         </div>
         <div class="col-md-9 col-xl-10 p-3 pl-md-0">
-            <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }} <img src="https://img.shields.io/endpoint?url=/assets/google_scholar/{{ item.pub_id }}.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations" style="height: 16px;"></h5>
+            <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }} <img src="https://img.shields.io/endpoint?url={{ site.url }}/assets/google_scholar/{{ item.pub_id }}.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations" style="height: 16px;"></h5>
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
             <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
             <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
