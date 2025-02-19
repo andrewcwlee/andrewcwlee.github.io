@@ -27,5 +27,9 @@ jobs:
         git add "assets/google_scholar/"
         git config --global user.email "itisandrewlee@gmail.com"
         git config --global user.name "andrewcwlee"
-        git commit -m "* update `date '+%Y-%m-%d %H:%M:%S'`"
-        git push
+        if git diff-index --quiet HEAD --; then
+          echo "No changes to commit"
+        else
+          git commit -m "* update google scholar $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+        fi
