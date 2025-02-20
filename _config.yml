@@ -33,6 +33,7 @@ defaults:
     values:
       sitemap:         false
 
+google-scholar-crawler: "https://raw.githubusercontent.com/andrewcwlee-dev/google-scholar-crawler/refs/heads/main/results"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

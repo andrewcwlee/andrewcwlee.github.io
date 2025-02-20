@@ -26,15 +26,13 @@ short_bio: >-
   Before starting my Ph.D., I was a Master’s student at the same lab, and I received my B.S. in Mechanical Engineering from Hanyang University in Seoul, South Korea.
   </p>
   <p>
-  As a researcher, I am passionate about <b>bridging the gap between robotics and human behavior</b>. Specifically, I am interested in (i) achieving <b>natural coordination between robots</b> (e.g., bimanual coordination, between arms and body) and (ii) developing <b>human-like active perception</b> strategies for robots.
+  As a researcher, I am passionate about bridging the gap between robotics and human behavior. Specifically, I am interested in (i) achieving <span class="gradient-color"><b>natural coordination between robots</b></span> (e.g., bimanual coordination, between arms and body) and (ii) developing <span class="gradient-color"><b>human-like active perception</b></span> strategies for robots.
   </p>
   <p>
-  Most recently, I have been exploring how Large Vision-Language Models (LVLMs) can be leveraged to guide robots in acquiring human-like bahaviors.
+  Most recently, I have been exploring how Large Vision-Language Models (LVLMs) can be leveraged to guide robots in learning human-like behaviors.
   </p>
-  ---
-  <p style="color: #76236C;">
-    <i>I am actively looking for <b>internship opportunities for 2025!</b> If you are interested in my research, please feel free to reach out to me.</i>
-  </p>
+  <blockquote>I am actively looking for <b>internship opportunities for 2025!</b> If you are interested in my research, please feel free to reach out to me.</blockquote>
+
 
 portrait_url: /assets/images/photos/profile.jpg
 portrait_caption: >-
@@ -44,17 +42,17 @@ education:
 - name: University of California, Davis
   logo: /assets/images/badges/ucdavis-logo.png
   position: >- 
-    <i>Ph.D. in Computer Science</i>
+    <b><i>Ph.D. in Computer Science</i></b>
   date: May. 2023 - Present
   note: "Advisor: Iman Soltani"
 - name: University of California, Davis
   logo: /assets/images/badges/ucdavis-logo.png
   position: >- 
-    <i>M.S. in Computer Science</i>
+    <b><i>M.S. in Computer Science</i></b>
   date: Sep. 2021 - Apr. 2023 (transition to Ph.D.)
 - name: Hanyang University
   logo: /assets/images/badges/hanyang-logo.png
-  position: <i>B.S. in Mechanical Engineering</i>
+  position: <b><i>B.S. in Mechanical Engineering</i></b>
   date: Feb. 2020
   note: "Thesis: Compact Motor-Driven Walk-Support Device for Reducing Muscle Load"
 

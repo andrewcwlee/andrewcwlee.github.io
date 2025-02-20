@@ -24,4 +24,8 @@ links:
   video: https://www.youtube.com/watch?v=DwJzdaKM4N0
   poster (workshop): '/assets/files/active-vision-workshop-poster.pdf'
 pub_id: "cfIJXfoAAAAJ:d1gkVwhDpl0C"
+cites: 16845060468932118304
+badge: ICRA-2025
+badge_url: https://2025.ieee-icra.org
+arxiv: 2409.17435
 ---

@@ -81,3 +81,51 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 10px solid #3498db;
+    background: #ecf5fc;
+    padding: 15px 20px;
+    margin: 20px 0;
+    width: 100%;
+    position: relative;
+}
+
+blockquote::before {
+    content: '\f10d';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.gradient-color {
+    background: linear-gradient(90deg, #b31e8d, #652d90 51%, #00819a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.davis-color {
+    font-weight: bold;
+    background: linear-gradient(45deg, #022851, #FFBF00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.germany-color {
+    background: linear-gradient(135deg, #000000, #DD0000 51%, #FFCC00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.usa-color {
+    background: linear-gradient(135deg, #0A3161 , #EEEEEE, #B31942);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.korea-color {
+    background: linear-gradient(90deg, #CD2E3A,  #FFFFFF, #0F64CD 51%,#000000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

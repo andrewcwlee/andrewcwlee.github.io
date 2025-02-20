@@ -21,4 +21,8 @@ links:
   arXiv: https://www.arxiv.org/abs/2409.07914
   poster: '/assets/files/interact-poster.pdf'
 pub_id: "cfIJXfoAAAAJ:u5HHmVD_uO8C"
+cites: 10463529790546272162
+badge: CoRL-2024
+badge_url: https://2024.corl.org
+arxiv: 2409.07914
 ---
