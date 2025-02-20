@@ -100,6 +100,7 @@ blockquote::before {
 }
 
 .gradient-color {
+    font-weight: bold;
     background: linear-gradient(90deg, #b31e8d, #652d90 51%, #00819a);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -113,18 +114,21 @@ blockquote::before {
 }
 
 .germany-color {
+    font-weight: bold;
     background: linear-gradient(135deg, #000000, #DD0000 51%, #FFCC00);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .usa-color {
-    background: linear-gradient(135deg, #0A3161 , #EEEEEE, #B31942);
+    font-weight: bold;
+    background: linear-gradient(135deg, #0A3161 , #0A3161, #EEEEEE, #B31942,  #B31942);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .korea-color {
+    font-weight: bold;
     background: linear-gradient(90deg, #CD2E3A,  #FFFFFF, #0F64CD 51%,#000000);
     background-clip: text;
     -webkit-text-fill-color: transparent;
