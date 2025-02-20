@@ -26,7 +26,7 @@ short_bio: >-
   Before starting my Ph.D., I was a Master’s student at the same lab, and I received my B.S. in Mechanical Engineering from Hanyang University in Seoul, South Korea.
   </p>
   <p>
-  As a researcher, I am passionate about bridging the gap between robotics and human behavior. Specifically, I am interested in (i) achieving <span class="gradient-color"><b>natural coordination between robots</b></span> (e.g., bimanual coordination, between arms and body) and (ii) developing <span class="gradient-color"><b>human-like active perception</b></span> strategies for robots.
+  As a researcher, I am passionate about bridging the gap between robotics and human behavior. Specifically, I am interested in (i) achieving <span class="gradient-color">natural coordination between robots</span> (e.g., bimanual coordination, between arms and body) and (ii) developing <span class="gradient-color">human-like active perception</span> strategies for robots.
   </p>
   <p>
   Most recently, I have been exploring how Large Vision-Language Models (LVLMs) can be leveraged to guide robots in learning human-like behaviors.
