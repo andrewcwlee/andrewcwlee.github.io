@@ -22,7 +22,7 @@ cv: /assets/files/cv_andrew_lee.pdf
 short_bio_text_justify: false
 short_bio: >-
   <p>
-     Hello, I am a Ph.D. student advised by Prof. <a href="https://faculty.engineering.ucdavis.edu/soltani/\" target="_blank">Iman Soltani</a> at <a href="https://soltanilab.engineering.ucdavis.edu" target="_blank">LARA</a>, University of California, Davis. 
+     Hello, I am a Ph.D. student advised by Prof. <a href="https://faculty.engineering.ucdavis.edu/soltani/\" target="_blank">Iman Soltani</a> at <a href="https://soltanilab.engineering.ucdavis.edu" target="_blank">LARA</a>, University of California, Davis. <br>
   Before starting my Ph.D., I was a Master’s student at the same lab, and I received my B.S. in Mechanical Engineering from Hanyang University in Seoul, South Korea.
   </p>
   <p>
