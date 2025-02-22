@@ -25,4 +25,11 @@ cites: 10463529790546272162
 badge: CoRL-2024
 badge_url: https://2024.corl.org
 arxiv: 2409.07914
+bibtex: >-
+  @article{lee2024interact,
+    title={InterACT: Inter-dependency Aware Action Chunking with Hierarchical Attention Transformers for Bimanual Manipulation},
+    author={Lee, Andrew and Chuang, Ian and Chen, Ling-Yuan and Soltani, Iman},
+    journal={arXiv preprint arXiv:2409.07914},
+    year={2024}
+  }
 ---

@@ -22,11 +22,10 @@ cv: /assets/files/cv_andrew_lee.pdf
 short_bio_text_justify: false
 short_bio: >-
   <p>
-     Hello, I am a Ph.D. student advised by Prof. <a href="https://faculty.engineering.ucdavis.edu/soltani/\" target="_blank">Iman Soltani</a> at <a href="https://soltanilab.engineering.ucdavis.edu" target="_blank">LARA</a>, University of California, Davis. <br>
-  Before starting my Ph.D., I was a Master’s student at the same lab, and I received my B.S. in Mechanical Engineering from Hanyang University in Seoul, South Korea.
+     Hello, I am a Ph.D. student advised by Prof. <a href="https://faculty.engineering.ucdavis.edu/soltani/\" target="_blank">Iman Soltani</a> at <a href="https://soltanilab.engineering.ucdavis.edu" target="_blank">LARA</a>, University of California, Davis.
   </p>
   <p>
-  As a researcher, I am passionate about bridging the gap between robotics and human behavior. Specifically, I am interested in (i) achieving <span class="gradient-color">natural coordination between robots</span> (e.g., bimanual coordination, between arms and body) and (ii) developing <span class="gradient-color">human-like active perception</span> strategies for robots.
+  As a researcher, I am passionate about bridging the gap between robotics and human behavior. Specifically, I am interested in (i) leveraging insights from <span class="gradient-color">human behavior for robust robot learning</span> and (ii) developing <span class="gradient-color">human-like active perception</span> strategies for robots.
   </p>
   <p>
   Most recently, I have been exploring how Large Vision-Language Models (LVLMs) can be leveraged to guide robots in learning human-like behaviors.
@@ -72,3 +71,25 @@ media:
   note: "UC Davis College of Engineering News"
   url: https://engineering.ucdavis.edu/news/eye-robot-researchers-give-machines-new-perspective-active-vision
   date: Nov. 2024
+
+news:
+- content: >-
+    Our <i><b>"Active Vision Might Be All You Need"</b></i> paper got accepted at <span class="usa-color">ICRA 2025</span>! Hope to see you in Atlanta, USA!
+  date: Jan. 2025
+  badge: <span class="badge badge-pill badge-paper color-usa">Conference</span>
+- content: >-
+    UC Davis College of Engineering News featured our work on AV-ALOHA! Check out the <a target='_blank' href='https://engineering.ucdavis.edu/news/eye-robot-researchers-give-machines-new-perspective-active-vision'>article</a>
+  date: Nov. 2024
+  badge:  <span class="badge badge-pill badge-media">Media</span>
+- content: >-
+    Our <i><b>"Active Vision Might Be All You Need"</b></i> paper got accepted at <span class="germany-color">CoRL 2024</span> <b>Workshop</b>
+  date: Oct. 2024
+  badge: <span class="badge badge-pill badge-paper">Workshop</span> 
+- content: >-
+    We released the <a target='_blank' href='https://github.com/soltanilara/av-aloha'>code</a> and <a target='_blank' href='https://github.com/soltanilara/av-aloha-unity'>code (VR)</a> for AV-ALOHA
+  date: Oct. 2024
+  badge: <span class="badge badge-pill badge-code">Code</span>
+- content: >-
+    Our <i><b>"InterACT"</b></i> paper got accepted at <span class="germany-color">CoRL 2024</span>
+  date: Sep. 2024
+  badge: <span class="badge badge-pill badge-paper">Conference</span>

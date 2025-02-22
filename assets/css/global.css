@@ -77,6 +77,11 @@ div.lazy {
     color: white;
 }
 
+.badge-media {
+    background-color: #76236C;
+    color: white;
+}
+
 .email-text {
     font-family: Courier, monospace;
 }
@@ -109,24 +114,24 @@ blockquote::before {
 
 .davis-color {
     font-weight: 900;
-    background: linear-gradient(45deg, #022851, #FFBF00);
-    background: -webkit-linear-gradient(45deg, #022851, #FFBF00);
+    background: linear-gradient(315deg, #022851, #FFBF00);
+    background: -webkit-linear-gradient(315deg, #022851, #FFBF00);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .germany-color {
     font-weight: 900;
-    background: linear-gradient(135deg, #000000, #DD0000 51%, #FFCC00 );
-    background: -webkit-linear-gradient(135deg, #000000, #DD0000 51%, #FFCC00 );
+    background: linear-gradient(315deg, #000000, #DD0000 51%, #FFCC00 );
+    background: -webkit-linear-gradient(315deg, #000000, #DD0000 51%, #FFCC00 );
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .usa-color {
     font-weight: 900;
-    background: linear-gradient(135deg, #0A3161, #DDDDDD 45%,  #B31942);
-    background: -webkit-linear-gradient(135deg, #0A3161, #DDDDDD 45%,  #B31942);
+    background: linear-gradient(315deg, #0A3161, #BBBBBB 45%,  #B31942);
+    background: -webkit-linear-gradient(315deg, #0A3161, #BBBBBB 45%,  #B31942);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -137,4 +142,8 @@ blockquote::before {
     background: -webkit-linear-gradient(90deg, #CD2E3A,  #FFFFFF, #0F64CD 51%,#000000);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.mono {
+    font-family: 'Courier New', Courier, monospace;
 }

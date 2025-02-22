@@ -28,4 +28,11 @@ cites: 16845060468932118304
 badge: ICRA-2025
 badge_url: https://2025.ieee-icra.org
 arxiv: 2409.17435
+bibtex: >-
+  @article{chuang2024active,
+    title={Active vision might be all you need: Exploring active vision in bimanual robotic manipulation},
+    author={Chuang, Ian and Lee, Andrew and Gao, Dechen and Soltani, Iman},
+    journal={arXiv preprint arXiv:2409.17435},
+    year={2024}
+  }
 ---
