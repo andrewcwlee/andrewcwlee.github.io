@@ -147,3 +147,8 @@ blockquote::before {
 .mono {
     font-family: 'Courier New', Courier, monospace;
 }
+
+.visit-map {
+    margin: auto;
+    min-height: 120px !important
+}
