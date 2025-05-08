@@ -1,23 +1,24 @@
-// Dark mode functionality
+// Dark mode functionality - Light mode by default with manual toggle only
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('darkModeToggle');
-    const htmlElement = document.documentElement;
     const moonIcon = '<i class="fas fa-moon"></i>';
     const sunIcon = '<i class="fas fa-sun"></i>';
     
     // Check for saved user preference, if any
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-            document.body.classList.remove('bg-light');
-            updateIcon('dark');
-        } else {
-            document.body.classList.remove('dark-mode');
-            updateIcon('light');
-        }
+    if (savedTheme === 'dark') {
+        // Only apply dark mode if explicitly saved as dark
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('bg-light');
+        updateIcon('dark');
+    } else {
+        // Default to light mode
+        document.body.classList.remove('dark-mode');
+        document.body.classList.add('bg-light');
+        updateIcon('light');
     }
     
+    // Toggle between light and dark mode
     darkModeToggle.addEventListener('click', function() {
         const isDarkMode = document.body.classList.contains('dark-mode');
         const newTheme = isDarkMode ? 'light' : 'dark';
@@ -60,35 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mapContainer.appendChild(script);
     }
     
-    // Detect system preference changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-        const newTheme = event.matches ? 'dark' : 'light';
-        // Only apply if the user hasn't manually set a preference
-        if (!localStorage.getItem('theme')) {
-            if (newTheme === 'dark') {
-                document.body.classList.add('dark-mode');
-                document.body.classList.remove('bg-light');
-            } else {
-                document.body.classList.remove('dark-mode');
-                document.body.classList.add('bg-light');
-            }
-            updateIcon(newTheme);
-            updateVisitMap(newTheme);
-        }
-    });
-    
-    // Initial system preference check (if no saved preference)
-    if (!localStorage.getItem('theme')) {
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const initialTheme = prefersDark ? 'dark' : 'light';
-        if (initialTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-            document.body.classList.remove('bg-light');
-        }
-        updateIcon(initialTheme);
-    }
-    
-    // Initialize visit map
+    // Initialize visit map based on current theme
     const currentTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
     updateVisitMap(currentTheme);
 });
