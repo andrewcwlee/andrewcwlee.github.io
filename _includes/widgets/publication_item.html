@@ -6,19 +6,25 @@
             <div class="publication-cover-container">
                 <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm publication-cover-img" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
             </div>
-            <div>
+            <!-- <div>
+                {% if item.conference_logo %}
+                {% if item.badge_url %}
+                <a href="{{ item.badge_url }}" target="_blank"><img src="{{ item.conference_logo | relative_url }}" style="max-width: 50%; max-height: 80px; margin: 10px 0;"></a>
+                {% else %}
+                <img src="{{ item.conference_logo | relative_url }}" style="max-width: 50%; max-height: 80px; margin: 10px 0;">
+                {% endif %}
+                {% else %}
                 {% if item.badge_url %}
                 <a href="{{ item.badge_url }}" target="_blank">{% if item.badge %}<img src="https://img.shields.io/badge/{{ item.badge }}-f6f6f6?labelColor=1D4776" style="height: 16px;">{% endif %}</a>
                 {% else %}
                 {% if item.badge %}<img src="https://img.shields.io/badge/{{ item.badge }}-f6f6f6?labelColor=1D4776" style="height: 16px;">{% endif %}
                 {% endif %}
+                {% endif %}
                 <a href="https://www.arxiv.org/abs/{{ item.arxiv }}" target="_blank"><img src="https://img.shields.io/badge/{{ item.arxiv }}-f6f6f6?labelColor=b31b1b&logo=arxiv" style="height: 16px;"></a>
-            </div>
-            <div>
                 {% if item.cites %}
                     <a href="https://scholar.google.com/scholar?cites={{ item.cites }}" target="_blank">{% if item.pub_id %}<img src="https://img.shields.io/endpoint?url={{ site.google-scholar-crawler }}/{{ item.pub_id }}.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat" style="height: 16px;">{% endif %}</a>
                     {% endif %}
-            </div>
+            </div> -->
             {%- else -%}
             <div class="publication-cover-container">
                 <svg class="bubble-visual-hash lazy publication-cover-img" data-bubble-visual-hash="{{ item.id }}" viewBox="0 0 16 9"></svg>
@@ -63,10 +69,18 @@
         {% endif %}
         <div class="mobile-pub-content py-3 px-4">
             <p>
+                {% if item.conference_logo %}
+                {% if item.badge_url %}
+                <a href="{{ item.badge_url }}" target="_blank"><img src="{{ item.conference_logo | relative_url }}" style="max-width: 50%; max-height: 60px; margin: 10px 0;"></a>
+                {% else %}
+                <img src="{{ item.conference_logo | relative_url }}" style="max-width: 50%; max-height: 60px; margin: 10px 0;">
+                {% endif %}
+                {% else %}
                 {% if item.badge_url %}
                 <a href="{{ item.badge_url }}" target="_blank">{% if item.badge %}<img src="https://img.shields.io/badge/{{ item.badge }}-f6f6f6?labelColor=1D4776" style="height: 16px;">{% endif %}</a>
                 {% else %}
                 {% if item.badge %}<img src="https://img.shields.io/badge/{{ item.badge }}-f6f6f6?labelColor=1D4776" style="height: 16px;">{% endif %}
+                {% endif %}
                 {% endif %}
                 <a href="https://www.arxiv.org/abs/{{ item.arxiv }}" target="_blank"><img src="https://img.shields.io/badge/{{ item.arxiv }}-f6f6f6?labelColor=b31b1b&logo=arxiv" style="height: 16px;"></a>
                 {% if item.cites %}
