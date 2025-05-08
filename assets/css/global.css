@@ -1,8 +1,15 @@
 @charset "utf-8";
+/* Dark mode variables and styles */
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     padding-top: 5.0rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #212529 !important;
+    color: #f8f9fa !important;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -10,8 +17,37 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 700;
 }
 
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6,
+body.dark-mode .h1, 
+body.dark-mode .h2, 
+body.dark-mode .h3, 
+body.dark-mode .h4, 
+body.dark-mode .h5, 
+body.dark-mode .h6 {
+    color: #f8f9fa;
+}
+
 a {
-    color:  #008EAA;
+    color: #008EAA;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode a {
+    color: #1ca9c9;
+}
+
+/* Dark mode toggle button */
+#darkModeToggle {
+    padding: 0.5rem;
+    color: inherit;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
 .text-profile-position {
@@ -25,6 +61,21 @@ a {
 
 .navbar {
     opacity: 0.95;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode .navbar {
+    background-color: #343a40 !important;
+}
+
+body.dark-mode .navbar-light .navbar-brand,
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #f8f9fa;
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link:hover,
+body.dark-mode .navbar-light .navbar-nav .nav-link:focus {
+    color: #1ca9c9;
 }
 
 .inline-badge {
@@ -80,6 +131,67 @@ div.lazy {
 .badge-media {
     background-color: #76236C;
     color: white;
+}
+
+/* Card dark mode styles */
+body.dark-mode .card {
+    background-color: #2b3035 !important;
+    border-color: rgba(255,255,255,.125);
+}
+
+body.dark-mode .card-body {
+    color: #f8f9fa;
+}
+
+body.dark-mode .text-muted {
+    color: #adb5bd !important;
+}
+
+/* Dark mode for blockquotes */
+body.dark-mode blockquote {
+    color: #ced4da !important;
+    background: #343a40 !important;
+    border-left-color: #1ca9c9 !important;
+}
+
+/* Additional important styles to ensure dark mode works */
+body.dark-mode .bg-light {
+    background-color: #212529 !important;
+}
+
+body.dark-mode .bg-white {
+    background-color: #2b3035 !important;
+}
+
+body.dark-mode * {
+    border-color: rgba(255,255,255,.125) !important;
+}
+
+/* Fix author list text color in dark mode */
+body.dark-mode .text-body {
+    color: #f8f9fa !important;
+}
+
+/* Fix mobile publication layout in dark mode */
+body.dark-mode .w-100[style*="background-color: rgba(255,255,255,0.9)"] {
+    background-color: rgba(43, 48, 53, 0.9) !important;
+}
+
+/* Fix bibtex display in dark mode */
+body.dark-mode code[id^="bibtex-"] {
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+}
+
+/* Fix publication card heading in dark mode */
+body.dark-mode .publication-card h6 {
+    color: #f8f9fa !important;
+}
+
+/* Fix mark element in dark mode */
+body.dark-mode mark {
+    background-color: #343a40 !important;
+    color: #adb5bd !important;
 }
 
 .email-text {

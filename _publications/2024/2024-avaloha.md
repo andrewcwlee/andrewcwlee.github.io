@@ -15,6 +15,7 @@ authors:
   - Ian Chuang*
   - Andrew Lee*
   - Dechen Gao
+  - M-Mahdi Naddaf-Sh
   - Iman Soltani
 links:
   project page: https://soltanilara.github.io/av-aloha/

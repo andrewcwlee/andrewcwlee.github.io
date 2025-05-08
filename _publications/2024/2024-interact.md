@@ -19,7 +19,7 @@ authors:
 links:
   project page: https://soltanilara.github.io/interact/
   arXiv: https://www.arxiv.org/abs/2409.07914
-  code: https://github.com/soltanilara/lerobot-interact
+  code: https://github.com/soltanilara/InterACT-LeRobot
   poster: '/assets/files/interact-poster.pdf'
 pub_id: "cfIJXfoAAAAJ:u5HHmVD_uO8C"
 cites: 10463529790546272162
