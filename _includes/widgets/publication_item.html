@@ -32,12 +32,12 @@
             {%- endif -%}
         </div>
         <div class="col-md-8 col-xl-9 p-3 pl-md-0">
-            <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
-            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
-            <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
+            <h5 class="mt-0 mb-1 font-weight-bold">{{ item.title }}</h5>
+            <p class="mt-0 mb-0">{% include widgets/author_list.html authors=item.authors %}</p>
+            <p class="mt-0 mb-0">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
+            <!-- <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p> -->
             
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
+            <p class="pb-0 mb-0 lh-125 text-muted abstract-links">
                 {% for link in item.links %}
                 {% if link[1].url %}
                 <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
@@ -68,7 +68,7 @@
         </div>
         {% endif %}
         <div class="mobile-pub-content py-3 px-4">
-            <p>
+            <!-- <p>
                 {% if item.conference_logo %}
                 {% if item.badge_url %}
                 <a href="{{ item.badge_url }}" target="_blank"><img src="{{ item.conference_logo | relative_url }}" style="max-width: 50%; max-height: 60px; margin: 10px 0;"></a>
@@ -86,12 +86,12 @@
                 {% if item.cites %}
                 <a href="https://scholar.google.com/scholar?cites={{ item.cites }}" target="_blank">{% if item.pub_id %}<img src="https://img.shields.io/endpoint?url={{ site.google-scholar-crawler }}/{{ item.pub_id }}.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat" style="height: 16px;">{% endif %}</a>
                 {% endif %}
-            </p>
-            <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
-            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
-            <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
-            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
+            </p> -->
+            <h5 class="mt-0 mb-1 font-weight-bold">{{ item.title }}</h5>
+            <p class="mt-0 mb-0">{% include widgets/author_list.html authors=item.authors %}</p>
+            <p class="mt-0 mb-0">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
+            <!-- <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p> -->
+            <p class="pb-0 mb-0 lh-125 text-muted abstract-links">
                 {% for link in item.links %}
                 {% if link[1].url %}
                 <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>

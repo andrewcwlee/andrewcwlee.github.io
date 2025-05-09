@@ -27,8 +27,7 @@ short_bio: >-
   <p>
   As a researcher, I am passionate about bridging the gap between robotics and human behavior. Specifically, I am interested in (i) leveraging insights from <span class="gradient-color">human behavior for robust robot learning</span> and (ii) developing <span class="gradient-color">human-like active perception</span> strategies for robots.
   </p>
-  <blockquote>I am actively looking for <b>internship opportunities for 2025!</b> If you are interested in my research, please feel free to reach out to me.</blockquote>
-
+  <p>I am always open for collaboration and discussion. Please feel free to reach out!</p>
 
 portrait_url: /assets/images/photos/profile.jpg
 portrait_caption: >-
@@ -45,12 +44,12 @@ education:
   logo: /assets/images/badges/ucdavis-logo.png
   position: >- 
     <b><i>M.S. in Computer Science</i></b>
-  date: Sep. 2021 - Apr. 2023 (transition to Ph.D.)
+  date: Transferred to Ph.D. (2023)
 - name: Hanyang University
   logo: /assets/images/badges/hanyang-logo.png
   position: <b><i>B.S. in Mechanical Engineering</i></b>
-  date: Feb. 2020
-  note: "Thesis: Compact Motor-Driven Walk-Support Device for Reducing Muscle Load"
+  date: 2020
+  # note: "Thesis: Compact Motor-Driven Walk-Support Device for Reducing Muscle Load"
 
 # experience:
 # - name: Laboratory for AI, Robotics and Automation (LARA)
@@ -59,11 +58,11 @@ education:
 #   position: Graduate Student Researcher
 #   date: Jul. 2022 - Present
 
-awards:
-- name: GGCS Fellowship (Winter, Spring), UC Davis 
-  date: 2025
-- name: GGCS Summer Ph.D. Fellowship, UC Davis
-  date: 2024
+# awards:
+# - name: GGCS Fellowship (Winter, Spring), UC Davis 
+#   date: 2025
+# - name: GGCS Summer Ph.D. Fellowship, UC Davis
+#   date: 2024
 
 media:
 - name: "Eye, Robot: Researchers Give Machines a New Perspective with Active Vision"
@@ -71,24 +70,24 @@ media:
   url: https://engineering.ucdavis.edu/news/eye-robot-researchers-give-machines-new-perspective-active-vision
   date: Nov. 2024
 
-news:
-- content: >-
-    Our <i><b>"Active Vision Might Be All You Need"</b></i> paper got accepted at <span class="usa-color">ICRA 2025</span>! Hope to see you in Atlanta, USA!
-  date: Jan. 2025
-  badge: <span class="badge badge-pill badge-paper color-usa">Conference</span>
-- content: >-
-    UC Davis College of Engineering News featured our work on AV-ALOHA! Check out the <a target='_blank' href='https://engineering.ucdavis.edu/news/eye-robot-researchers-give-machines-new-perspective-active-vision'>article</a>
-  date: Nov. 2024
-  badge:  <span class="badge badge-pill badge-media">Media</span>
-- content: >-
-    Our <i><b>"Active Vision Might Be All You Need"</b></i> paper got accepted at <span class="germany-color">CoRL 2024</span> <b>Workshop</b>
-  date: Oct. 2024
-  badge: <span class="badge badge-pill badge-paper">Workshop</span> 
-- content: >-
-    We released the <a target='_blank' href='https://github.com/soltanilara/av-aloha'>code</a> and <a target='_blank' href='https://github.com/soltanilara/av-aloha-unity'>code (VR)</a> for AV-ALOHA
-  date: Oct. 2024
-  badge: <span class="badge badge-pill badge-code">Code</span>
-- content: >-
-    Our <i><b>"InterACT"</b></i> paper got accepted at <span class="germany-color">CoRL 2024</span>
-  date: Sep. 2024
-  badge: <span class="badge badge-pill badge-paper">Conference</span>
+# news:
+# - content: >-
+#     Our <i><b>"Active Vision Might Be All You Need"</b></i> paper got accepted at <span class="usa-color">ICRA 2025</span>! Hope to see you in Atlanta, USA!
+#   date: Jan. 2025
+#   badge: <span class="badge badge-pill badge-paper color-usa">Conference</span>
+# - content: >-
+#     UC Davis College of Engineering News featured our work on AV-ALOHA! Check out the <a target='_blank' href='https://engineering.ucdavis.edu/news/eye-robot-researchers-give-machines-new-perspective-active-vision'>article</a>
+#   date: Nov. 2024
+#   badge:  <span class="badge badge-pill badge-media">Media</span>
+# - content: >-
+#     Our <i><b>"Active Vision Might Be All You Need"</b></i> paper got accepted at <span class="germany-color">CoRL 2024</span> <b>Workshop</b>
+#   date: Oct. 2024
+#   badge: <span class="badge badge-pill badge-paper">Workshop</span> 
+# - content: >-
+#     We released the <a target='_blank' href='https://github.com/soltanilara/av-aloha'>code</a> and <a target='_blank' href='https://github.com/soltanilara/av-aloha-unity'>code (VR)</a> for AV-ALOHA
+#   date: Oct. 2024
+#   badge: <span class="badge badge-pill badge-code">Code</span>
+# - content: >-
+#     Our <i><b>"InterACT"</b></i> paper got accepted at <span class="germany-color">CoRL 2024</span>
+#   date: Sep. 2024
+#   badge: <span class="badge badge-pill badge-paper">Conference</span>
