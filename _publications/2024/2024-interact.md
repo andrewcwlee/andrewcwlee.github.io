@@ -11,6 +11,7 @@ pub_date:
 abstract: >-
   InterACT is an imitation learning model that captures and extracts inter-dependencies between dual-arm joint positions and visual inputs. By doing so, InterACT guides the two arms to perform bimanual tasks with precision—independently yet in seamless coordination.
 cover:          /assets/images/covers/interact-teaser.gif
+caption:        CoRL 2024
 authors:
   - Andrew Lee
   - Ian Chuang
