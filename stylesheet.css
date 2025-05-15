@@ -245,12 +245,12 @@ pre::first-line {
 
 .code-date {
   color: #5383a6;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .code-title {
   color: #7c5b69;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Publication links styling */
