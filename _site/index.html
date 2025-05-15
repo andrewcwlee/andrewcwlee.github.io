@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/profile.jpg">
+  <title>Andrew Lee. Personal Webpage</title>
+
+  <!-- Gif toggle functionality removed - GIFs now play by default -->
+
+  <!-- Selected publications toggle -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function pubs_off_start() {
+      $('.hiddenPubs').hide();
+      var e = document.getElementById('sel_pub_button');
+      e.classList.add("toggled");
+      var e = document.getElementById('all_pub_button');
+      e.classList.remove("toggled");
+    }
+    function pubs_off() {
+      $('.hiddenPubs').slideUp();
+      var e = document.getElementById('sel_pub_button');
+      e.classList.add("toggled");
+      var e = document.getElementById('all_pub_button');
+      e.classList.remove("toggled");
+    }
+    function pubs_on() {
+      $('.hiddenPubs').slideDown();
+      var e = document.getElementById('all_pub_button');
+      e.classList.add("toggled");
+      var e = document.getElementById('sel_pub_button');
+      e.classList.remove("toggled");
+    };
+  </script>
+
+  <!-- Dynamic generation -->
+  <script src="https://unpkg.com/mustache@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script type="text/javascript" src="data/js-yaml.min.js"></script>
+  <script type="text/javascript">
+    // Handlebars helper for comparison
+    Handlebars.registerHelper('if_eq', function(a, b, opts) {
+      if (a === b) {
+        return opts.fn(this);
+      } else {
+        return opts.inverse(this);
+      }
+    });
+
+    function renderHello() {
+      var template = document.getElementById('template').innerHTML;
+      $.get("./papers.yaml").done(function (data) {
+        try {
+          papers = jsyaml.load(data)
+          var rendered = Handlebars.compile(template)(papers);
+          document.getElementById('mustache_target').innerHTML = rendered;
+          pubs_off_start()
+          console.log("loading papers.yaml done!")
+        }
+        catch (err) {
+          console.log(err);
+        }
+      });
+    }
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- Dark mode removed -->
+  <a name="top"></a>
+  
+  <!-- Main container -->
+  <div class="container py-4" style="max-width: 950px;">
+    <!-- Intro & photo -->
+    <div class="row align-items-center mb-4 profile-row">
+      <div class="col-md-8 order-md-1 order-2 text-md-start text-center">
+        <h1 class="mb-0 mt-2 mt-md-0 fw-bold">Andrew Lee</h1>
+        <p class="mb-2 small text-muted">이충원 | awclee at ucdavis dot edu</p>
+        <p class="mb-2">👋 Hello! I'm a Computer Science PhD Student at UC Davis, advised by Dr. <a href="https://www.lara-soltani.com/people/iman-soltani" target="_blank">Iman Soltani</a> at <a href="https://www.lara-soltani.com" target="_blank">LARA</a>. Prior to UC Davis, I received a B.S. in Mechanical Engineering at Hanyang University in South Korea.</p>
+        <p class="mb-2">My research aims to enable human-like behaviors in robots. I’m exploring the injection of human-inspired priors into robot learning through inductive biases that guide perception and action toward more efficient and generalizable behaviors. I am always open for collaboration and discussion. Please feel free to reach out!</p>
+
+        <p>Beyond research, I have a passion for photography and enjoy keeping up with the fast-paced world of <a href="https://youtu.be/MTe12fH2xtQ?si=4GzjATYokDYmAgBu&t=33" target="_blank"><span class="f1-logo-container"><img src="images/logos/formula1.png" alt="Formula 1"></span></a> racing.</p>
+        <div class="social-links d-flex flex-wrap justify-content-md-start justify-content-center mb-3">
+          <a href="mailto:awclee@ucdavis.edu" class="me-3 mb-2 social-link"><i class="fas fa-envelope me-1"></i>Email</a>
+          <a href="https://www.linkedin.com/in/andrewcwlee/" class="me-3 mb-2 social-link" target="_blank"><i class="fab fa-linkedin me-1"></i>LinkedIn</a>
+          <a href="https://github.com/andrewcwlee" target="_blank" class="me-3 mb-2 social-link"><i class="fab fa-github me-1"></i>GitHub</a>
+          <a href="https://twitter.com/andrewleecw/" target="_blank" class="me-3 mb-2 social-link"><i class="fab fa-x-twitter me-1"></i>Twitter</a>
+          <a href="https://scholar.google.com/citations?user=cfIJXfoAAAAJ&hl=en" target="_blank" class="me-3 mb-2 social-link"><i class="fas fa-graduation-cap me-1"></i>Google Scholar</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 order-md-2 order-1 mb-2 mb-md-0 d-flex justify-content-center">
+        <div class="image-cropper">
+          <img src="images/profile.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <!-- News -->
+    <div class="row mb-3">
+      <div class="col-12">
+        <h2 class="mb-2">Updates</h2>
+        <div class="code-block-container">
+          <pre class="code-block mb-0">// Personal updates
+<span class="code-date">05/25:</span> I will be attending ICRA 2025 in Atlanta (May 19-23). Feel free to reach out if you want to meet up!
+</pre>
+          <pre class="code-block mb-0">// Publication updates
+<span class="code-date">02/25:</span> <span class="code-title">Active Vision Might Be All You Need</span> is accepted at ICRA 2025
+<span class="code-date">09/24:</span> <span class="code-title">InterACT</span> is accepted at CoRL 2024
+</pre>
+        </div>
+      </div>
+    </div>
+    
+    <a name="re"></a>
+    <!-- Publications -->
+    <div class="row mb-3">
+      <div class="col-12">
+        <h2 class="mb-1">Publications <span style="font-size:15px;">(<a style="font-size:15px" id='sel_pub_button' href="javascript:pubs_off()">Research</a> /
+          <a style="font-size:15px" id='all_pub_button' href="javascript:pubs_on()">All</a>)</span></h2> 
+        <div class="mb-2 small">
+          <span class="badge bg-light text-dark py-1">* equal contribution</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="mustache_target" class="row">Loading...</div>
+    
+    <script id="template" type="text/x-handlebars-template">
+      {{#papers}}
+      <div class="col-12 publication-item mb-3 {{#unless highlighted}}hiddenPubs{{/unless}}"
+           data-name="{{name}}">
+        <div class="card border-0 shadow-sm">
+          <div class="row g-0 p-0 align-items-center publication-row">
+            <div class="col-lg-3 col-md-4 col-12 pe-0 d-flex justify-content-center publication-img-col">
+              <div class="publication-image">
+                {{#if nogif}}
+                <img src='images/{{name}}.png' alt="Paper image">
+                {{else}}
+                <img src='images/{{name}}.gif' alt="Paper animation">
+                {{/if}}
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-12 publication-content-col">
+              <div class="card-body px-2 px-md-3 py-2 py-md-3 d-flex flex-column justify-content-center text-start">
+                <h5 class="card-title">{{#if title.link}}<a href={{title.link}} class="text-decoration-none">{{else}}<a class="text-decoration-none">{{/if}}{{title.name}}</a></h5>
+                <p class="card-text mb-1">
+                {{#authors}}
+                {{#if me}}
+                  <strong><u>Andrew Lee</u></strong>{{#if star}}*{{/if}}{{#unless @last}}, {{/unless}}
+                {{else}}
+                  {{#if href}}
+                    <a class="text-dark" href={{href}}>{{name}}</a>{{#if star}}*{{/if}}{{#if star2}}<sup>&#8224;</sup> {{/if}}{{#unless @last}}, {{/unless}}
+                  {{else}}
+                  <a class="text-dark">{{name}}</a>{{#if star}}*{{/if}}{{#if star2}}<sup>&#8224;</sup>{{/if}}{{#unless @last}}, {{/unless}}
+                  {{/if}}
+                {{/if}}
+                {{/authors}}
+                </p>
+                <p class="card-text"><small class="text-muted">{{{conference.name}}}</small></p>
+                <p class="card-text">{{description}}</p>
+                <div class="mt-2 mb-1 pub-links">
+                {{#links}}
+                {{#if href}}
+                  <a href={{href}} target="_blank" class="pub-link me-3">
+                    {{name}}
+                  </a>
+                {{else}}
+                  <span class="pub-link disabled me-3">{{name}}</span>
+                {{/if}}
+                {{/links}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/papers}}
+    </script>
+    
+    <script type="text/javascript">
+      renderHello()
+    </script>
+
+    <!-- Education -->
+    <a name="e"></a>
+    <div class="row mb-3">
+      <div class="col-12">
+        <h2 class="mb-2">Education</h2>
+        <ul class="education-list">
+          <li>
+            <span class="edu-year">2023 - present:</span>
+            <span class="edu-degree">PhD in Computer Science,</span>
+            <span class="edu-school"><span class="school-logo-container"><img src="images/logos/ucdavis-logo.png" alt="UC Davis"></span>University of California, Davis</span>
+          </li>
+          <li>
+            <span class="edu-year">2023:</span>
+            <span class="edu-degree">MS in Computer Science <span class="edu-note">(transferred to PhD)</span></span>
+            <span class="edu-school"><span class="school-logo-container"><img src="images/logos/ucdavis-logo.png" alt="UC Davis"></span>University of California, Davis</span>
+          </li>
+          <li>
+            <span class="edu-year">2020:</span>
+            <span class="edu-degree">BS in Mechanical Engineering,</span>
+            <span class="edu-school"><span class="school-logo-container"><img src="images/logos/hanyang-logo.png" alt="Hanyang University"></span>Hanyang University, South Korea</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+    <div class="text-center mt-3 mb-2">
+      <p class="text-muted small mb-0">
+        Andrew Lee &copy; 2025<br>
+      </p>
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
