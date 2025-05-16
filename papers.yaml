@@ -75,7 +75,7 @@ papers:
       - name : video
         href: https://www.youtube.com/watch?v=DwJzdaKM4N0
       - name: poster (ICRA 2025)
-        href: https://www.youtube.com/watch?v=0g1r7v2aX4E
+        href: /files/poster/avaloha-poster.pdf
     highlighted: true
     nogif: false
     description: We introduce AV-ALOHA, a new bimanual teleoperation robot system that extends the ALOHA 2 robot system with Active Vision. This system provides an immersive teleoperation experience, with bimanual first-person control, enabling the operator to dynamically explore and search the scene and simultaneously interact with the environment. We conduct imitation learning experiments and our results show significant improvements over fixed cameras in tasks with limited visibility.
